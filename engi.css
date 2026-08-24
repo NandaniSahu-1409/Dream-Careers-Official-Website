@@ -1122,3 +1122,232 @@
     margin-top: 12px;
     font-family: Arial, sans-serif;
 }
+
+/* =====================================================
+   ENGI.CSS RESPONSIVE — TABLET (max 1024px)
+   ===================================================== */
+
+@media (max-width: 1024px) {
+    .engineering-programs-card-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .engineering-education-cards-item {
+        grid-template-columns: 1fr;
+    }
+
+    .engineering-investment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .engineering-popular-branches-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .right-choice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .counseling-servies-carditem {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .engineering-box-content {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .engineering-box-item {
+        flex: 1 1 calc(50% - 20px);
+        min-width: 200px;
+    }
+}
+
+/* =====================================================
+   ENGI.CSS RESPONSIVE — MOBILE (max 768px)
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* ENGINEERING HERO */
+    .engineering-counseling {
+        padding: 50px 0;
+    }
+
+    .engineering-title {
+        font-size: 32px;
+    }
+
+    .engineering-para {
+        font-size: 15px;
+    }
+
+    /* ENGINEERING BOX */
+    .engineering-box {
+        padding: 24px 0;
+    }
+
+    .engineering-box-content {
+        flex-direction: column;
+        padding: 0 16px;
+        gap: 16px;
+    }
+
+    .engineering-box-item {
+        flex: 1 1 100%;
+    }
+
+    /* PROGRAMS */
+    .engineering-programs {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .engineering-programs-container {
+        padding: 0 16px;
+    }
+
+    .engineering-programs-card-item {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .engineering-programs-heading,
+    .engineering-education-heading,
+    .engineering-counseling-process-heading,
+    .engineering-popular-branches-heading,
+    .engineering-investment-heading,
+    .engineering-right-choice-heading,
+    .counseling-servies-heading,
+    .engineering-why-dc-heading {
+        font-size: 1.6rem;
+    }
+
+    /* EDUCATION */
+    .engineering-education-container,
+    .engineering-counseling-process-container,
+    .engineering-popular-branches-container,
+    .engineering-investment-container,
+    .engineering-right-choice-container,
+    .engineering-why-dc-container {
+        padding: 0 16px;
+    }
+
+    .engineering-education-cards-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .engineering-education-cadrs-data,
+    .engineering-education-cadrs-dataone {
+        padding: 24px;
+    }
+
+    /* COUNSELING PROCESS */
+    .engineering-counseling-process .engineering-programs-card-item {
+        grid-template-columns: 1fr;
+    }
+
+    /* POPULAR BRANCHES */
+    .engineering-popular-branches-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* INVESTMENT */
+    .engineering-investment-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .investment-card {
+        padding: 24px;
+    }
+
+    .fee-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    /* RIGHT CHOICE */
+    .right-choice-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .right-choice-card {
+        padding: 24px;
+    }
+
+    /* COUNSELING SERVICES */
+    .counseling-servies-cards {
+        padding: 0 16px;
+    }
+
+    .counseling-servies-carditem {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .counseling-servies-carditemone {
+        padding: 24px;
+    }
+
+    /* BTN */
+    .btn {
+        width: 100%;
+    }
+}
+
+/* =====================================================
+   ENGI.CSS RESPONSIVE — SMALL PHONES (max 480px)
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    .engineering-title {
+        font-size: 26px;
+    }
+
+    .engineering-para {
+        font-size: 14px;
+    }
+
+    .engineering-programs-heading,
+    .engineering-education-heading,
+    .engineering-counseling-process-heading,
+    .engineering-popular-branches-heading,
+    .engineering-investment-heading,
+    .engineering-right-choice-heading,
+    .counseling-servies-heading,
+    .engineering-why-dc-heading {
+        font-size: 1.4rem;
+    }
+
+    .engineering-programs-item {
+        padding: 22px;
+    }
+
+    .engineering-programs-item h3 {
+        font-size: 17px;
+    }
+
+    .branch-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .investment-card h2 {
+        font-size: 18px;
+    }
+
+    .engineering-education-cadrs-data h1,
+    .engineering-education-cadrs-dataone h1 {
+        font-size: 20px;
+    }
+
+    .engineering-box-item .num {
+        font-size: 28px;
+    }
+}

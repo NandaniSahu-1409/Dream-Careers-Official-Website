@@ -43,7 +43,13 @@
             <img src="logopic.png" alt="Dream Careers">
         </div>
 
-        <nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="main-nav">
             <ul>
 
                 <li><a href="index.html" class="active">Home</a></li>
@@ -51,7 +57,7 @@
                 <li><a href="services.html">Services</a></li>
 
                 <li class="dropdown">
-                    <a href="#">
+                    <a href="#" class="dropdown-toggle">
                         Counseling
                         <i class="fa-solid fa-chevron-down"></i>
                     </a>
@@ -63,7 +69,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#">
+                    <a href="#" class="dropdown-toggle">
                         Programs
                         <i class="fa-solid fa-chevron-down"></i>
                     </a>
@@ -1174,6 +1180,33 @@
             icon.style.transform = 'rotate(180deg)';
         }
     }
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('main-nav');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mainNav.classList.toggle('open');
+    });
+
+    // Mobile dropdown toggle
+    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+        toggle.addEventListener('click', function (e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const parent = this.parentElement;
+                parent.classList.toggle('dropdown-open');
+            }
+        });
+    });
+
+    // Close nav when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!mainNav.contains(e.target) && !hamburger.contains(e.target)) {
+            mainNav.classList.remove('open');
+            hamburger.classList.remove('active');
+        }
+    });
 </script>
 
 </html>
