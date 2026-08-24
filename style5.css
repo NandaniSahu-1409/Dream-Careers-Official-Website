@@ -1,0 +1,403 @@
+.contact {
+    background: #112344;
+    padding: 80px 0;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-header {
+    text-align: center;
+}
+
+.contact-badge {
+    display: inline-block;
+    color: rgb(255 252 252 / 75%);
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    background: #929292;
+    /* background-color: transparent; */
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.contact-heading {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.contact-para {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.contact-breadcrumb a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-breadcrumb span {
+    color: white;
+}
+
+.contact-card {
+    background: #f8faff;
+    padding: 48px 26px;
+
+}
+
+.cc-cards {
+    /* height: 1rem; */
+    margin-bottom: 2rem;
+
+}
+
+.cc_cards-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+
+.cc_cards-item {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 28px 24px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cc_cards-item i {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(23, 92, 221, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.cc_cards-item h6 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #9c9d9f;
+    margin: 0 0 6px;
+}
+
+.cc_cards-item h3 {
+    font-weight: bolder;
+}
+
+.cc_cards-item p {
+    font-weight: 600;
+    font-size: 17px;
+    color: #112344;
+    margin: 0 0 4px;
+    line-height: 1.5;
+}
+
+
+.contact-message {
+    padding: 22px 20px 50px;
+    background: #ffffff;
+}
+
+.cm-container {
+    max-width: 1080px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.cm-card .cm-tag {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.cm-card .cm-heading {
+    font-weight: 800;
+    font-size: clamp(26px, 3vw, 36px);
+    color: #112344;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.cm-para {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 28px;
+    margin-top: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+/* .form-group label {
+    font-weight: 600;
+    color: #112344;
+    margin-bottom: 6px;
+    font-size: 12px !important;
+    display: inline-block;
+    cursor: default;
+
+}
+
+.form-group span {
+color: #dc3545;
+} */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    color: #102e56;
+
+    margin-bottom: 7px;
+}
+
+.form-group label span {
+    color: #e53935;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #dce3eb;
+    border-radius: 9px;
+
+    padding: 12px 13px;
+
+    font-size: 12px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+}
+
+.form-group input {
+    height: 40px;
+}
+
+.form-group textarea {
+    height: 108px;
+
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1764df;
+}
+.cm-ntm {
+    width: 100%;
+    height: 43px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #2163d8;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.cm-ntm:hover {
+    background: #124fbf;
+}
+
+.cm-ntm i {
+    margin-right: 7px;
+}
+
+.social-card {
+    margin-top: 20px;
+
+    background: #ffffff;
+
+    padding: 22px 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+}
+
+.social-card h4 {
+    font-size: 11px;
+    letter-spacing: 1px;
+
+    color: #102e56;
+
+    margin-bottom: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 13px;
+}
+
+.social-icons a {
+    width: 37px;
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.instagram {
+    background: #e1306c;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.whatsapp {
+    background: #25d366;
+}
+
+.map-box {
+    width: 100%;
+    height: 350px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+.quick-contact {
+    margin-top: 18px;
+
+    background: #112c57;
+
+    padding: 22px 20px;
+
+    border-radius: 15px;
+}
+
+.quick-contact > h4 {
+    color: white;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 14px;
+}
+
+.cm_contact-item {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    background: #193e7d;
+
+    padding: 15px 12px;
+
+    border-radius: 7px;
+
+    margin-bottom: 13px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-icon {
+    width: 30px;
+
+    color: #74b6ff;
+
+    font-size: 17px;
+
+    text-align: center;
+}
+
+.contact-item h3 {
+    color: white;
+
+    font-size: 12px;
+
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #a9c3e8;
+
+    font-size: 10px;
+}

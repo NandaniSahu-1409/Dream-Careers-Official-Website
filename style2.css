@@ -1,0 +1,362 @@
+.study-abroad {
+    background: #112344;
+    padding: 80px 0;
+}
+
+.sa-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sa-header {
+    text-align: center;
+}
+
+.sa-badge {
+    display: inline-block;
+    color: rgb(255 252 252 / 75%);
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    background: #929292;
+    /* background-color: transparent; */
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.sa-heading {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.sa-header p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sa-breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sa-breadcrumb a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.sa-breadcrumb span {
+    color: white;
+}
+
+.studyabroad-content .sdc-container {
+    background: #f4f8ff;
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(23, 92, 221, 0.08);
+}
+
+.sdc-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 700px;
+    margin-left: 28.5rem;
+    /* padding:auto; */
+    text-align: center;
+
+}
+
+.sdc-body .sdc-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 24px;
+    text-align: center;
+    width: 15rem;
+}
+
+.sdc-body .num {
+    color: #175cdd;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.sdc-body h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sb-country {
+    padding: 40px 0;
+}
+
+.sb-header {
+    text-align: center;
+    gap: 20px;
+}
+
+
+.sb-main {
+    /* display: flex;
+    jusdtify-content: center;
+    text-align: center; */
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    /* text-aling: center; */
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+
+.sb-heading {
+    color: #000;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 800;
+    line-height: 1.25;
+    font-size: clamp(24px, 3vw, 34px);
+}
+
+/* 
+.sb-para {
+    color: #6b7280;
+    max-width: 600px;
+    margin: 16px auto 0;
+} */
+
+.sb-card {
+    padding: 50px 25px;
+    margin-left: 17rem;
+    display: grid;
+    justify-content: space-between;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 65rem;
+}
+
+.sb-con {
+    font-weight: 700;
+    font-size: 18px;
+    color: #112344;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.sb_card-items {
+    /* background: #ac2727; */
+    /* border-radius: 16px; */
+    /* padding: 20px 24px;
+    text-align: center;
+    width: 15rem;
+    margin-right: 20px; */
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(23, 92, 221, 0.08);
+    margin-bottom: 24px;
+    transition: all .3s;
+    height: 100%;
+}
+
+.sb-list {
+    gap: 30px;
+    list-style: none;
+}
+
+.sb_card-items ul li {
+    padding: 6px 0;
+    color: #6b7280;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.sb-package {
+    background: #f4f8ff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sb_package-content {
+    text-align: center;
+}
+
+.sb_package-subheading {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 9px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+.sb_package-heading {
+    font-weight: 800;
+    font-size: clamp(24px, 3vw, 34px);
+    color: #112344;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.sb_package-para {
+
+    text-align: center;
+    color: #6b7280;
+    max-width: 700px;
+    margin: 13px auto 0;
+}
+
+.sb_package-cards {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 7rem;
+    /* gap: 15px; */
+}
+
+.sb_package-heading {
+    font-weight: 700;
+    font-size: 18px;
+    color: #112344;
+    margin-bottom: 16px
+}
+
+.sb_package-carditem ul li {
+    padding: 8px 0;
+    color: #6b7280;
+    font-size: 14px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.sb_package-carditem {
+    width: 35rem;
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(23, 92, 221, 0.08);
+    margin-bottom: 24px;
+    transition: all .3s;
+    height: 22rem;
+}
+
+.sb_package-btn {
+    background: #0D6EFD;
+    color: #FFFFFF;
+    padding: 5.625px 11.25px;
+    width: 35rem;
+    height: 2.5rem;
+    margin-left: 29rem;
+}
+
+.journey {
+    background:#fff;
+
+}
+
+.journey_boxitem {
+    background: linear-gradient(135deg, var(--accent-color) 0%, #0ea5e9 100%);
+    border-radius: 20px;
+    padding: 40px 48px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.journey-tag {
+    background: #fff;
+    color: #175cdd;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform .2s, box-shadow .2s;
+    margin-left: 48rem;
+}
+
+
+.journey {
+    padding: 80px 0;
+    background: #f5f7fb;
+}
+
+.journey-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.journey-box {
+    background: linear-gradient(90deg, #2563eb, #0ea5e9);
+    border-radius: 25px;
+    padding: 40px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.journey-content {
+    max-width: 650px;
+}
+
+.journey-content h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.journey-content p {
+    color: #eef6ff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.journey-btn {
+    background: #fff;
+    color: #2563eb;
+    text-decoration: none;
+    padding: 18px 35px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.journey-btn:hover {
+    background: #f2f2f2;
+    transform: translateY(-3px);
+}

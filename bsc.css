@@ -1,0 +1,59 @@
+.nursing-counseling {
+    background: #112344;
+    padding: 80px 0;
+}
+
+.nursing-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nursing-content {
+    text-align: center;
+
+
+}
+
+.nursing-badge {
+
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.nursing-title {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.nursing-para {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.nursing_counseling-breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.nursing_counseling-breadcrumb a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nursing_counseling-breadcrumb span {
+    color: white;
+}

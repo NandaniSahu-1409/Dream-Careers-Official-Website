@@ -1,0 +1,1124 @@
+.engineering-counseling {
+    background: #112344;
+    padding: 80px 0;
+}
+
+.engineering-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.engineering-content {
+    text-align: center;
+
+
+}
+
+.engineering-badge {
+
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.engineering-title {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.engineering-para {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.engineering_counseling-breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.engineering_counseling-breadcrumb a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.engineering_counseling-breadcrumb span {
+    color: white;
+}
+
+
+.engineering-box {
+    background: #f4f8ff;
+    padding: 38px 0;
+    border-bottom: 1px solid rgba(23, 92, 221, 0.08);
+}
+
+.engineering-box-container {
+    width: 100%;
+}
+
+.engineering-box-body {
+    width: 100%;
+}
+
+.engineering-box-content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.engineering-box-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px 24px;
+    text-align: center;
+    flex: 1;
+    min-width: 0;
+    box-shadow: 0 8px 25px rgba(20, 50, 100, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.engineering-box-item:hover {
+    transform: translateY(-5px);
+}
+
+.engineering-box-item .num {
+    display: block;
+    color: #175cdd;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.engineering-box-item h4 {
+    margin: 0;
+    color: #707887;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.engineering-programs {
+    background-color: #ffffff;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.engineering-programs-container {
+    padding: 0 40px;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.engineering-programs-header {
+    text-align: center;
+    gap: 20px;
+}
+
+.engineering-programs-main {
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+.engineering-programs-heading {
+    color: #000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 800;
+    line-height: 1.25;
+    font-size: clamp(24px, 3vw, 34px);
+}
+
+.engineering-programs-para {
+    color: #6b7280;
+    max-width: 600px;
+    margin: 16px auto 0;
+}
+
+.engineering-programs-card-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2.5rem;
+    gap: 25px;
+}
+
+.engineering-programs-item {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(23, 92, 221, 0.08);
+    margin-bottom: 24px;
+    transition: all .3s;
+    height: 100%;
+}
+
+.engineering-programs-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(20, 50, 100, 0.1);
+}
+
+.engineering-programs-item span {
+    width: 55px;
+    height: 55px;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.engineering-programs-item h3 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #112344;
+    margin-bottom: 12px;
+}
+
+.engineering-programs-item p {
+    color: #6b7280;
+    font-size: 15.5px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.engineering-programs-item .duration,
+.engineering-programs-item .engineering-programs-duration {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: auto;
+}
+
+
+.engineering-education {
+    background: #f8faff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.engineering-education-container {
+    padding: 0 40px;
+    max-width: 1420px;
+    /* margin: 0 auto; */
+    margin-top: 1rem;
+}
+
+.engineering-education-header {
+    text-align: center;
+}
+
+.engineering-education-main {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    /* margin-bottom: 14px; */
+    /* margin-left: 17.6rem; */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.engineering-education-heading {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    /* font-size: clamp(24px, 3vw, 34px); */
+    font-size: 2rem;
+    color: #112344;
+    margin-top: 12px;
+    /* line-height: 1.25; */
+    /* margin-bottom: 12px; */
+}
+
+.engineering-education-para {
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.engineering-education-cards-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    align-items: stretch;
+}
+
+.engineering-education-cadrs-data,
+.engineering-education-cadrs-dataone {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(23, 92, 221, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+.engineering-education-cadrs-data h1,
+.engineering-education-cadrs-dataone h1 {
+    font-size: 24px;
+    color: #0b2046;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.engineering-education-cadrs-data p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.engineering-education-cadrs-data div {
+    margin-bottom: 18px;
+}
+
+.engineering-education-cadrs-data h4 {
+    color: #6b7280;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    position: relative;
+    padding-left: 28px;
+}
+
+.engineering-education-cadrs-data h4 span {
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.engineering-education-cadrs-data h4 strong {
+    color: #374151;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.engineering-education-cadrs-data h4 span i {
+    color: #10b981;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.engineering-education-cadrs-dataone div {
+    border-left: 4px solid #2563eb;
+    background: #f8faff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+}
+
+.engineering-education-cadrs-dataone div:last-child {
+    margin-bottom: 0;
+}
+
+.engineering-education-cadrs-dataone div span {
+    display: block;
+    color: #1e3a8a;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.engineering-education-cadrs-dataone div h4 {
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.engineering-counseling-process {
+    background: #f8faff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.engineering-counseling-process-container {
+    padding: 0 40px;
+    max-width: 1420px;
+    /* margin: 0 auto; */
+    margin-top: 1rem;
+}
+
+.engineering-counseling-process-header {
+    text-align: center;
+}
+
+.engineering-counseling-process-main {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    /* margin-bottom: 14px; */
+    /* margin-left: 17.6rem; */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.engineering-counseling-process-heading {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    /* font-size: clamp(24px, 3vw, 34px); */
+    font-size: 2rem;
+    color: #112344;
+    margin-top: 12px;
+    /* line-height: 1.25; */
+    /* margin-bottom: 12px; */
+}
+
+.engineering-counseling-process-para {
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.engineering-counseling-process .engineering-programs-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.engineering-counseling-process .engineering-programs-item span {
+    margin: 0 auto 18px auto;
+}
+
+.engineering-counseling-process .engineering-programs-item h3 {
+    margin-bottom: 12px;
+}
+
+.engineering-counseling-process .engineering-programs-item p {
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+
+.engineering-popular-branches {
+    background: #f8faff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.engineering-popular-branches-container {
+    padding: 0 40px;
+    max-width: 1420px;
+    /* margin: 0 auto; */
+    margin-top: 1rem;
+}
+
+.engineering-popular-branches-header {
+    text-align: center;
+}
+
+.engineering-popular-branches-main {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    /* margin-bottom: 14px; */
+    /* margin-left: 17.6rem; */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.engineering-popular-branches-heading {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    /* font-size: clamp(24px, 3vw, 34px); */
+    font-size: 2rem;
+    color: #112344;
+    margin-top: 12px;
+    /* line-height: 1.25; */
+    /* margin-bottom: 12px; */
+}
+
+.engineering-popular-branches-para {
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.engineering-popular-branches-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+.engineering-popular-branches-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(23, 92, 221, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.engineering-popular-branches-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(20, 50, 100, 0.1);
+}
+
+.branch-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.branch-header h3 {
+    font-size: 18px;
+    color: #0b2046;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.branch-header .branch-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.package-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.package-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package-row .label {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.package-row .value {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* Colors */
+.tag-blue {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+
+.val-blue {
+    color: #3b82f6;
+}
+
+.tag-purple {
+    background: rgba(139, 92, 246, 0.1);
+    color: #8b5cf6;
+}
+
+.val-purple {
+    color: #8b5cf6;
+}
+
+.tag-teal {
+    background: rgba(20, 184, 166, 0.1);
+    color: #14b8a6;
+}
+
+.val-teal {
+    color: #14b8a6;
+}
+
+.tag-orange {
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+}
+
+.val-orange {
+    color: #f59e0b;
+}
+
+.tag-green {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.val-green {
+    color: #10b981;
+}
+
+.tag-red {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+.val-red {
+    color: #ef4444;
+}
+
+.tag-indigo {
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366f1;
+}
+
+.val-indigo {
+    color: #6366f1;
+}
+
+.tag-pink {
+    background: rgba(236, 72, 153, 0.1);
+    color: #ec4899;
+}
+
+.val-pink {
+    color: #ec4899;
+}
+
+
+.engineering-investment {
+    background: #f8faff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.engineering-investment-container {
+    padding: 0 40px;
+    max-width: 1420px;
+    /* margin: 0 auto; */
+    margin-top: 1rem;
+}
+
+.engineering-investment-header {
+    text-align: center;
+}
+
+.engineering-investment-main {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    /* margin-bottom: 14px; */
+    /* margin-left: 17.6rem; */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.engineering-investment-heading {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    /* font-size: clamp(24px, 3vw, 34px); */
+    font-size: 2rem;
+    color: #112344;
+    margin-top: 12px;
+    /* line-height: 1.25; */
+    /* margin-bottom: 12px; */
+}
+
+.engineering-investment-para {
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.engineering-investment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 10px;
+    align-items: stretch;
+}
+
+.investment-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(23, 92, 221, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+.investment-card h2 {
+    font-size: 22px;
+    color: #112344;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Left Card */
+.fee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.fee-info h4 {
+    font-size: 15px;
+    color: #1e3a8a;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.fee-info p {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.fee-amount {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3b82f6;
+}
+
+/* Right Card */
+.support-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.support-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.support-item i {
+    font-size: 20px;
+    color: #3b82f6;
+    margin-top: 2px;
+}
+
+.support-info h4 {
+    font-size: 15px;
+    color: #1e3a8a;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.support-info p {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+
+.engineering-right-choice {
+    background: #f8faff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.engineering-right-choice-container {
+    padding: 0 40px;
+    max-width: 1420px;
+    /* margin: 0 auto; */
+    margin-top: 1rem;
+}
+
+.engineering-right-choice-header {
+    text-align: center;
+}
+
+.engineering-right-choice-main {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    /* margin-bottom: 14px; */
+    /* margin-left: 17.6rem; */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.engineering-right-choice-heading {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    /* font-size: clamp(24px, 3vw, 34px); */
+    font-size: 2rem;
+    color: #112344;
+    margin-top: 12px;
+    /* line-height: 1.25; */
+    /* margin-bottom: 12px; */
+}
+
+.engineering-right-choice-para {
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.right-choice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 10px;
+    align-items: stretch;
+}
+
+.right-choice-card {
+    border-radius: 20px;
+    padding: 35px;
+    font-family: Arial, sans-serif;
+}
+
+.card-challenges {
+    background: #fff7f7;
+    border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+.card-benefits {
+    background: #f0fdf4;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.choice-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.card-challenges .choice-card-header i {
+    font-size: 20px;
+    color: #ef4444;
+}
+
+.card-benefits .choice-card-header i {
+    font-size: 20px;
+    color: #10b981;
+}
+
+.choice-card-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card-challenges .choice-card-header h3 {
+    color: #dc2626;
+}
+
+.card-benefits .choice-card-header h3 {
+    color: #065f46;
+}
+
+.choice-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.choice-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card-challenges .choice-list li {
+    color: #374151;
+}
+
+.card-benefits .choice-list li {
+    color: #374151;
+}
+
+.choice-icon {
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.icon-x i {
+    color: #ef4444;
+    font-size: 18px;
+}
+
+.icon-check i {
+    color: #10b981;
+    font-size: 18px;
+}
+
+
+
+.counseling-servies {
+    background: #f8faff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.counseling-servies-container {
+    padding: 15px 15px;
+}
+
+.counseling-servies-header {
+    text-align: center;
+}
+
+.counseling-servies-mainheading {
+    margin-top: 1rem;
+}
+
+.counseling-servies-main {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    /* margin-bottom: 14px; */
+    /* margin-left: 17.6rem; */
+    text-align: center;
+}
+
+.counseling-servies-heading {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    /* font-size: clamp(24px, 3vw, 34px); */
+    font-size: 2rem;
+    color: #112344;
+    margin-top: 12px;
+    /* line-height: 1.25; */
+    /* margin-bottom: 12px; */
+}
+
+.counseling-servies-para {
+    color: #6b7280;
+    font-size: 15px;
+    /* margin-bottom: 28px; */
+    font-weight: 400;
+    margin-top: 12px;
+    /* margin-left: 6rem; */
+}
+
+.counseling-servies-cards {
+    margin-top: 1.5rem;
+    padding: 0 40px;
+}
+
+.counseling-servies-carditem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.counseling-servies-carditemone {
+    background: #fff;
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(23, 92, 221, 0.08);
+    height: 100%;
+    transition: all .3s;
+}
+
+.counseling-servies-carddata h1 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #112344;
+    margin-bottom: 16px;
+}
+
+.counseling-servies-carddata p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.counseling-servies-carddata h4 span {
+    color: #10b981;
+}
+
+.counseling-servies-carddata h4 {
+    padding: 8px 0;
+    color: #6b7280;
+    font-size: 14px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+/* 
+.counseling-servies-button {
+
+    padding: 20px 17px;
+    margin-top: 1rem;
+
+} */
+
+.btn {
+    color: #ffffff;
+    background-color: #0D6EFD;
+    width: 20rem;
+    height: 45px;
+    /* margin-bottom: 10px; */
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+
+
+
+.engineering-why-dc {
+    background: #f8faff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.engineering-why-dc-container {
+    padding: 0 40px;
+    max-width: 1420px;
+    /* margin: 0 auto; */
+    margin-top: 1rem;
+}
+
+.engineering-why-dc-header {
+    text-align: center;
+}
+
+.engineering-why-dc-main {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    /* margin-bottom: 14px; */
+    /* margin-left: 17.6rem; */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.engineering-why-dc-heading {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    /* font-size: clamp(24px, 3vw, 34px); */
+    font-size: 2rem;
+    color: #112344;
+    margin-top: 12px;
+    /* line-height: 1.25; */
+    /* margin-bottom: 12px; */
+}
+
+.engineering-why-dc-para {
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+}

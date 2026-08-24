@@ -1,0 +1,318 @@
+.testimonials {
+    background: #112344;
+    padding: 80px 0;
+}
+
+.testimonials-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.testimonials-header {
+    text-align: center;
+
+
+}
+
+.testimonials-badge {
+    display: inline-block;
+    color: rgb(255 252 252 / 75%);
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    background: #929292;
+    /* background-color: transparent; */
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.tesimonials-heading {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.testimonials-para {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.testimonials-breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.testimonials-breadcrumb a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.testimonials-breadcrumb span {
+    color: white;
+}
+
+
+.tm_box-content {
+    background: #112344;
+    border-radius: 20px;
+    padding: 36px 40px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    width: 73rem;
+    height: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.tm_box-star {
+    display: flex;
+    align-items: center;
+    gap: 3.5px;
+    list-style: none;
+}
+
+.dc-rating-divider {
+    width: 1px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.tm_box-seconditem {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 5rem;
+    padding-left: 6.5rem;
+}
+
+.tm_box-content h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.tm_box-content p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+
+.testimonoals-reviews {
+    margin-top: 4rem;
+}
+
+.tm-subheading {
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    /* text-aling: center; */
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.tm-heading {
+    color: #000;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 800;
+    line-height: 1.25;
+    font-size: clamp(24px, 3vw, 34px);
+}
+
+.carousel-inner {
+    padding: 50px 25px;
+    /* margin-left: 17rem; */
+    display: grid;
+    justify-content: space-between;
+    /* gap: 50px; */
+    grid-template-columns: repeat(5, 1fr);
+    width: 65rem;
+}
+
+.tm-testi-slide {
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(23, 92, 221, 0.08);
+    margin-bottom: 24px;
+    transition: all .3s;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for more reviews */
+
+
+
+.morereviews {
+    background: #f8faff;
+    margin-top: 6rem;
+}
+
+.morereviews-title {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+
+
+}
+
+.morereviews-subheading {
+    display: inline-block;
+    background: rgba(23, 92, 221, 0.1);
+    color: #175cdd;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 9px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+
+
+.morereviews-heading {
+    font-weight: 800;
+    font-size: clamp(24px, 3vw, 34px);
+    color: #112344;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.morereviews_card-content {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 50px;
+    padding: 50px 40px;
+    justify-content: space-between;
+    width: 85rem;
+
+    margin-left: 5rem;
+}
+
+.morereviews_card-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.tm-avatar-initials {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #175cdd;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+    letter-spacing: 0.5px;
+}
+
+.morereviews_card-item strong {
+    margin-left: 3rem;
+}
+
+.morereviews_card-item .tm-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 16px;
+}
+
+
+.testi-box {
+    background: linear-gradient(135deg, #175cdd, #0ea5e9 100%);
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 22px;
+    height: 8rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    
+}
+
+.testi_box-item {
+    color: #fff;
+    gap: 4px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.testi_box-item h4 {
+    font-weight: 800;
+    font-size: 22px;
+    color: #fff;
+    margin: 0;
+}
+
+.testi_boc-item p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    margin: 6px 0 0;
+}
+
+.testi-link {
+    /* background: #ffffff;
+    padding: 25px 30px;
+    width: 20rem;
+
+    height: 1rem;
+    margin-left: 60rem;
+    padding-bottom: 10rem; */
+    background: #fff;
+    color: #175cdd;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 60rem;
+    margin-top: -100px;
+}
