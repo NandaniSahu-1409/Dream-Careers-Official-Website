@@ -360,3 +360,204 @@
     background: #f2f2f2;
     transform: translateY(-3px);
 }
+
+
+/* =====================================================
+   STYLE2.CSS (STUDY ABROAD) RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .sdc-body {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 20px;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sdc-body .sdc-item {
+        width: auto;
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .sb-card {
+        margin-left: 0;
+        width: 100%;
+        padding: 30px 20px;
+        gap: 24px;
+    }
+
+    .sb_package-cards {
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .sb_package-carditem {
+        width: 100%;
+        height: auto;
+    }
+
+    .sb_package-btn {
+        width: auto;
+        margin-left: 20px;
+        padding: 12px 24px;
+    }
+
+    .journey-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 24px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .study-abroad {
+        padding: 50px 0;
+    }
+
+    .sa-heading {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .sa-header p {
+        font-size: 15px;
+    }
+
+    /* STATS BAR */
+    .studyabroad-content .sdc-container {
+        padding: 20px 0;
+    }
+
+    .sdc-body {
+        flex-direction: column;
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 16px;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .sdc-body .sdc-item {
+        width: 100%;
+        padding: 16px;
+    }
+
+    /* COUNTRY CARDS */
+    .sb-country {
+        padding: 30px 0;
+    }
+
+    .sb-card {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        width: 100%;
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    .sb-heading {
+        font-size: clamp(22px, 5vw, 30px);
+        padding: 0 16px;
+    }
+
+    .sb-header {
+        padding: 0 16px;
+    }
+
+    .sb_card-items {
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    /* PACKAGE SECTION */
+    .sb-package {
+        padding: 20px 16px;
+    }
+
+    .sb_package-cards {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        padding: 0;
+        gap: 16px;
+        margin-top: 1rem;
+    }
+
+    .sb_package-carditem {
+        width: 100%;
+        height: auto;
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    .sb_package-heading {
+        font-size: clamp(22px, 5vw, 30px);
+    }
+
+    .sb_package-btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+        text-align: center;
+        display: block;
+        padding: 12px;
+        height: auto;
+    }
+
+    /* JOURNEY / CTA BOX */
+    .journey {
+        padding: 50px 0;
+    }
+
+    .journey-container {
+        padding: 0 16px;
+    }
+
+    .journey-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 20px;
+        gap: 20px;
+        border-radius: 16px;
+    }
+
+    .journey-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .journey-content p {
+        font-size: 1rem;
+    }
+
+    .journey-btn {
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .sa-heading {
+        font-size: 26px;
+    }
+
+    .sa-header p {
+        font-size: 14px;
+    }
+
+    .sb-con {
+        font-size: 16px;
+    }
+
+    .journey-content h2 {
+        font-size: 1.4rem;
+    }
+}

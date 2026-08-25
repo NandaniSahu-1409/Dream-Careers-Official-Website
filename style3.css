@@ -87,3 +87,94 @@
     color: #fff;
 }
 
+
+
+/* =====================================================
+   STYLE3.CSS (MBBS ABROAD) RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .sma-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .sma-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .studymbbs-content {
+        padding: 40px 16px;
+        margin: 30px 0;
+    }
+
+    .sma-heading {
+        padding: 0 4px;
+    }
+
+    .sma-heading h2 {
+        font-size: clamp(22px, 5vw, 32px);
+    }
+
+    .sma-card {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .sma_card-item {
+        padding: 20px;
+    }
+
+    .sma-icon {
+        font-size: 32px;
+    }
+
+    .sma_container {
+        padding: 24px 16px;
+        margin: 30px 0;
+    }
+
+    .sma-box {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .sma-mcard {
+        padding: 40px 16px;
+        margin: 30px 0;
+    }
+
+    .sma_card-title {
+        font-size: 20px;
+    }
+
+    .sma_card-text {
+        font-size: 14px;
+    }
+
+    .sma_card-btn {
+        padding: 12px 20px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .studymbbs-content {
+        padding: 30px 12px;
+    }
+
+    .sma_container {
+        padding: 20px 12px;
+    }
+
+    .sma_card-title {
+        font-size: 18px;
+    }
+}

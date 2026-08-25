@@ -57,3 +57,39 @@
 .pharmacy_counseling-breadcrumb span {
     color: white;
 }
+
+
+/* =====================================================
+   PHARMA.CSS (PHARMACY) RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .pharmacy-counseling {
+        padding: 50px 0;
+    }
+
+    .pharmacy-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .pharmacy-para {
+        font-size: 15px;
+    }
+
+    .pharmacy-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .pharmacy-title {
+        font-size: 26px;
+    }
+
+    .pharmacy-para {
+        font-size: 14px;
+    }
+}

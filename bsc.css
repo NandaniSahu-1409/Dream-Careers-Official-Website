@@ -57,3 +57,39 @@
 .nursing_counseling-breadcrumb span {
     color: white;
 }
+
+
+/* =====================================================
+   BSC.CSS (BSC NURSING) RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .nursing-counseling {
+        padding: 50px 0;
+    }
+
+    .nursing-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .nursing-para {
+        font-size: 15px;
+    }
+
+    .nursing-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nursing-title {
+        font-size: 26px;
+    }
+
+    .nursing-para {
+        font-size: 14px;
+    }
+}

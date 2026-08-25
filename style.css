@@ -1226,16 +1226,13 @@ nav ul li a i {
 @media (max-width: 1024px) {
     .top_bar .container {
         padding: 0 20px;
-        height: auto;
-        flex-wrap: wrap;
-        gap: 5px;
-        padding-top: 6px;
-        padding-bottom: 6px;
+        height: 40px;
+        flex-wrap: nowrap;
     }
 
     .top_bar .container .left {
         gap: 12px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .top_bar a {
@@ -1294,30 +1291,54 @@ nav ul li a i {
 
 @media (max-width: 768px) {
 
-    /* TOP BAR */
+    /* TOP BAR — compact single row with contact left, socials right */
     .top_bar .container {
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding: 8px 16px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 40px;
+        padding: 0 14px;
+        overflow: hidden;
+    }
+
+    .top_bar .container .left {
+        gap: 14px;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .top_bar .container .left a:last-child {
+        display: none; /* hide second contact if too long */
     }
 
     .top_bar .container .right {
-        gap: 12px;
+        gap: 10px;
+        flex-shrink: 0;
+        align-items: center;
+    }
+
+    .top_bar a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .top_bar i {
+        margin-right: 4px;
     }
 
     /* NAVBAR */
     .navbar {
         padding: 0 16px;
-        height: 65px;
+        height: 60px;
         position: sticky;
         top: 0;
         z-index: 1000;
     }
 
     .logo img {
-        width: 160px;
+        width: 170px;
     }
 
     .hamburger {
@@ -1327,7 +1348,7 @@ nav ul li a i {
     #main-nav {
         display: none;
         position: absolute;
-        top: 65px;
+        top: 60px;
         left: 0;
         width: 100%;
         background: #fff;
@@ -1384,48 +1405,102 @@ nav ul li a i {
 
     /* HERO */
     .hero {
-        padding: 30px 5%;
+        padding: 24px 16px 30px;
     }
 
     .hero-container {
         flex-direction: column;
-        gap: 30px;
+        gap: 24px;
     }
 
     .hero-content {
         align-items: flex-start;
+        width: 100%;
     }
 
-    .hero-content h1 {
-        font-size: 30px;
+    /* UPDATE BOX — keep as single row */
+    .update-box {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
     }
 
+    .update-label {
+        padding: 10px 12px;
+        font-size: 11px;
+        gap: 5px;
+        white-space: nowrap;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .update-box marquee {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    /* HERO BUTTONS */
     .hero-buttons {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        margin-bottom: 24px;
     }
 
     .hero-buttons .btn {
         width: 100%;
         justify-content: center;
+        padding: 13px 20px;
+        font-size: 15px;
+        border-radius: 10px;
     }
 
-    .update-box {
-        flex-direction: column;
-        align-items: flex-start;
+    /* HERO HEADING */
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 14px;
     }
 
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.65;
+        margin-bottom: 24px;
+    }
+
+    /* STATS CARDS */
     .stats {
         flex-wrap: wrap;
         gap: 10px;
+        margin-bottom: 20px;
     }
 
     .card {
         width: calc(50% - 5px);
         flex: 1;
+        padding: 16px 10px;
     }
 
+    .card h2 {
+        font-size: 24px;
+    }
+
+    /* SERVICE BTN */
+    .service-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 15px;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+    }
+
+    /* CALL CARD */
+    .call-card {
+        max-width: 100%;
+    }
+
+    /* HERO SLIDER */
     .hero-slider {
         width: 100%;
     }
@@ -1505,30 +1580,69 @@ nav ul li a i {
    ===================================================== */
 
 @media (max-width: 480px) {
-    .top_bar .container .left {
-        flex-direction: column;
-        gap: 4px;
+
+    /* TOP BAR — keep as single row, just tighter */
+    .top_bar .container {
+        padding: 0 10px;
+        height: 40px;
     }
 
+    .top_bar a {
+        font-size: 11px;
+    }
+
+    .top_bar .container .left {
+        gap: 10px;
+    }
+
+    .top_bar .container .right {
+        gap: 8px;
+    }
+
+    /* NAVBAR */
+    .logo img {
+        width: 155px;
+    }
+
+    /* HERO HEADING */
     .hero-content h1 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .hero-content p {
         font-size: 14px;
     }
 
-    .card {
-        width: 100%;
+    /* UPDATE BOX */
+    .update-label {
+        font-size: 10px;
+        padding: 9px 10px;
     }
 
+    .update-box marquee {
+        font-size: 11px;
+    }
+
+    /* BUTTONS */
+    .hero-buttons .btn {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+
+    /* STATS */
     .stats {
-        flex-direction: column;
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
-    .stats .card {
-        width: 100%;
+    .card {
+        width: calc(50% - 4px);
+        flex: 1;
+        padding: 14px 8px;
+    }
+
+    .card h2 {
+        font-size: 22px;
     }
 
     .call-card {

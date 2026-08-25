@@ -2026,3 +2026,590 @@ span {
         flex-direction: column;
     }
 }
+
+
+/* =====================================================
+   MEDI.CSS RESPONSIVE — TABLET (max 1024px)
+   ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .medi-box-content {
+        flex-wrap: wrap;
+        padding: 0 20px;
+        gap: 16px;
+    }
+
+    .medi-box-body .medi-box-item {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 160px;
+    }
+
+    .medi-card-container {
+        padding: 0 20px;
+    }
+
+    .medi-card-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .medi-seat-container {
+        padding: 0 20px;
+    }
+
+    .medi-seat-card {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+
+    .mcc-process-item {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .mcc-importantinfo {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .state-counseling-carditem {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 20px;
+    }
+
+    .sc-cardone {
+        padding: 0 20px;
+    }
+
+    .state-counseling-carditemone {
+        grid-template-columns: 1fr;
+    }
+
+    .counseling-servies-carditem {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .investment-card-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .investment-card {
+        padding: 0 20px;
+    }
+
+    .ibanks-card-dataone {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .investment-banks-cards-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .education-loan {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .career-prospects-carddata {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .career-prospects-card {
+        padding: 0 20px;
+    }
+
+    .career-prospects-dataten {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .why-dc-carddata {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-dc-firstbox {
+        padding: 0 20px;
+    }
+
+    .why-dc-journey-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 24px;
+    }
+
+    .medi-seat-main {
+        margin-left: 0;
+    }
+
+    .mcc-process-main {
+        margin-left: 0;
+    }
+
+    .state-counseling-main {
+        margin-left: 0;
+    }
+
+    .mcc-process-para {
+        margin-left: 0;
+    }
+
+    .state-counseling-para {
+        margin-left: 0;
+    }
+
+    .investment-budget {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* =====================================================
+   MEDI.CSS RESPONSIVE — MOBILE (max 768px)
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .medicle-counseling {
+        padding: 50px 0;
+    }
+
+    .medicle-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .medicle-para {
+        font-size: 15px;
+    }
+
+    /* STATS BOX */
+    .medi-box {
+        padding: 24px 0;
+    }
+
+    .medi-box-content {
+        flex-direction: column;
+        padding: 0 16px;
+        gap: 12px;
+    }
+
+    .medi-box-body .medi-box-item {
+        flex: 1 1 100%;
+    }
+
+    /* PROGRAMS CARD */
+    .medi-card-container {
+        padding: 0 16px;
+    }
+
+    .medi-card-item {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .medi-card-heading {
+        font-size: clamp(22px, 6vw, 30px);
+    }
+
+    /* SEAT */
+    .medi-seat {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .medi-seat-container {
+        padding: 0 16px;
+    }
+
+    .medi-seat-content {
+        justify-content: flex-start;
+    }
+
+    .medi-seat-main {
+        margin-left: 0;
+    }
+
+    .medi-seat-heading {
+        font-size: 1.5rem;
+    }
+
+    .medi-seat-para {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .medi-seat-card {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+        gap: 16px;
+    }
+
+    .medi-seat-itemtwo {
+        padding: 0 16px;
+    }
+
+    .medi-seat-cardone {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .medi-seat-carddata {
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    /* MCC PROCESS */
+    .mcc-process {
+        padding: 40px 0;
+    }
+
+    .mcc-process-mainheading {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+    }
+
+    .mcc-process-main {
+        margin-left: 0;
+    }
+
+    .mcc-process-heading {
+        font-size: 1.5rem;
+        padding: 0 16px;
+    }
+
+    .mcc-process-para {
+        margin-left: 0;
+        padding: 0 16px;
+        font-size: 14px;
+    }
+
+    .mcc-process-item {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+        gap: 16px;
+    }
+
+    .mcc-process-carddata,
+    .mcc-process-carddataone,
+    .mcc-process-carddatatwo,
+    .mcc-process-carddatathree {
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    .mcc-importantinfo {
+        margin-left: 16px;
+        margin-right: 16px;
+        max-width: calc(100% - 32px);
+        padding: 24px;
+    }
+
+    /* STATE COUNSELING */
+    .state-counseling {
+        padding: 40px 0;
+    }
+
+    .state-counseling-mainheading {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+    }
+
+    .state-counseling-main {
+        margin-left: 0;
+    }
+
+    .state-counseling-heading {
+        font-size: 1.5rem;
+        padding: 0 16px;
+    }
+
+    .state-counseling-para {
+        margin-left: 0;
+        padding: 0 16px;
+        font-size: 14px;
+    }
+
+    .state-counseling-carditem {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 16px;
+        gap: 10px;
+    }
+
+    .sc-cardone {
+        padding: 0 16px;
+        margin-top: 1.5rem;
+    }
+
+    .state-counseling-carditemone {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .state-couns-dataone,
+    .state-couns-datatwo {
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    /* COUNSELING SERVICES */
+    .counseling-servies-cards {
+        padding: 0 16px;
+    }
+
+    .counseling-servies-carditem {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .counseling-servies-heading {
+        font-size: 1.5rem;
+    }
+
+    .counseling-servies-carditemone {
+        padding: 24px;
+    }
+
+    .btn {
+        width: 100%;
+        height: auto;
+        padding: 14px;
+    }
+
+    /* INVESTMENT */
+    .investment-container {
+        padding: 0 16px;
+    }
+
+    .investment-heading {
+        font-size: 1.5rem;
+    }
+
+    .investment-card {
+        padding: 0 16px;
+        margin-top: 1rem;
+    }
+
+    .investment-card-item {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .investment-card-data,
+    .investment-card-dataone,
+    .investment-card-datatwo,
+    .investment-card-datathree {
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    .investment-budget {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 24px 20px;
+    }
+
+    .ib-item {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    /* INVESTMENT BANKS */
+    .investment-banks-cards-content {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .ibanks-card-dataone {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .ibanks-data,
+    .ibanks-dataone,
+    .ibanks-datatwo {
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    /* EDUCATION LOAN */
+    .el-section {
+        padding: 0 16px;
+    }
+
+    .education-loan {
+        width: 100%;
+        height: auto;
+        padding: 20px 16px;
+        margin-top: 1rem;
+    }
+
+    /* CAREER PROSPECTS */
+    .career-prospects-container {
+        padding: 0 16px;
+    }
+
+    .career-prospects-heading {
+        font-size: 1.5rem;
+    }
+
+    .career-prospects-card {
+        padding: 0 16px;
+        margin-top: 0.5rem;
+    }
+
+    .career-prospects-carddata {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .career-prospects-cards {
+        padding: 0.5rem 16px;
+    }
+
+    .career-prospects-dataten {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 16px;
+    }
+
+    .career-prospects-datatwelve,
+    .career-prospects-datathirteen {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    /* WHY DC */
+    .why-dc {
+        padding: 0 16px;
+        margin-top: 1.5rem;
+    }
+
+    .why-dc-container {
+        padding: 0;
+    }
+
+    .why-dc-heading {
+        font-size: 1.5rem;
+    }
+
+    .why-dc-carddata {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .why-dc-carddataone {
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    .why-dc-firstbox {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 0 16px;
+    }
+
+    .why-dc-firstbox-item {
+        padding: 30px 20px;
+    }
+
+    .why-dc-firstbox-item h1 {
+        font-size: 20px;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .why-dc-features {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .why-dc-features .feature-text {
+        font-size: 16px;
+    }
+
+    .journey-tag {
+        margin-left: 0;
+        margin-top: 1rem;
+        display: inline-block;
+    }
+
+    .why-dc-journey-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .why-dc-ourney-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .why-dc-ourney-content p {
+        font-size: 1rem;
+    }
+
+    .why-dc-journey-btn {
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+/* =====================================================
+   MEDI.CSS RESPONSIVE — SMALL PHONES (max 480px)
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    .medicle-title {
+        font-size: 26px;
+    }
+
+    .medicle-para {
+        font-size: 14px;
+    }
+
+    .medi-seat-heading,
+    .mcc-process-heading,
+    .state-counseling-heading,
+    .counseling-servies-heading,
+    .investment-heading,
+    .career-prospects-heading,
+    .why-dc-heading {
+        font-size: 1.3rem;
+    }
+
+    .medi-item {
+        padding: 22px;
+    }
+
+    .medi-item h3 {
+        font-size: 17px;
+    }
+
+    .state-counseling-carditem {
+        grid-template-columns: 1fr;
+    }
+
+    .career-prospects-carddata {
+        grid-template-columns: 1fr;
+    }
+
+    .medi-seat-carddata {
+        padding: 20px;
+    }
+
+    .seat-head {
+        font-size: 17px;
+    }
+
+    .itemtwo-head,
+    .itemtwo-headone {
+        font-size: 20px;
+    }
+}

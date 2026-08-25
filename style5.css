@@ -401,3 +401,126 @@ color: #dc3545;
 
     font-size: 10px;
 }
+
+
+/* =====================================================
+   STYLE5.CSS (CONTACT) RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .cc_cards-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .cm-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .contact {
+        padding: 50px 0;
+    }
+
+    .contact-heading {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .contact-para {
+        font-size: 15px;
+    }
+
+    /* CONTACT CARDS */
+    .contact-card {
+        padding: 30px 16px;
+    }
+
+    .cc_cards-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .cc_cards-item {
+        padding: 20px 16px;
+        gap: 14px;
+    }
+
+    .cc_cards-item i {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+    }
+
+    .cc_cards-item p {
+        font-size: 15px;
+    }
+
+    /* MESSAGE / FORM */
+    .contact-message {
+        padding: 20px 16px 40px;
+    }
+
+    .cm-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .cm-card .cm-heading {
+        font-size: clamp(22px, 5vw, 30px);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .map-box {
+        height: 280px;
+    }
+
+    /* SOCIAL + QUICK CONTACT */
+    .social-card {
+        padding: 18px 16px;
+    }
+
+    .quick-contact {
+        padding: 18px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contact-heading {
+        font-size: 26px;
+    }
+
+    .contact-para {
+        font-size: 14px;
+    }
+
+    .cc_cards-content {
+        grid-template-columns: 1fr;
+    }
+
+    .cc_cards-item {
+        padding: 18px 14px;
+    }
+
+    .map-box {
+        height: 220px;
+    }
+}

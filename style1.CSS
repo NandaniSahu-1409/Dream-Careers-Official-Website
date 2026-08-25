@@ -434,3 +434,322 @@ nav ul li a i {
     width: 18px;
     color: #2563eb;
 }
+
+
+/* =====================================================
+   STYLE1.CSS (SERVICES PAGE) RESPONSIVE
+   ===================================================== */
+
+/* HAMBURGER BUTTON */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1100;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #222;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+
+    .top_bar .container {
+        padding: 0 20px;
+        height: 40px;
+        flex-wrap: nowrap;
+    }
+
+    .navbar {
+        padding: 0 24px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    nav ul {
+        gap: 16px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .service-information .i-container {
+        flex-direction: column;
+    }
+
+    .service-information .i-container .right {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .service-information .i-container .left .grid {
+        width: 100%;
+    }
+
+    .service-information .i-container .left .benifit {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-information .i-container .alert.alert-warning {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* TOP BAR — compact single row: contact left, socials right */
+    .top_bar .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 40px;
+        padding: 0 14px;
+        overflow: hidden;
+    }
+
+    .top_bar .container .left {
+        gap: 14px;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .top_bar .container .left a:last-child {
+        display: none;
+    }
+
+    .top_bar .container .right {
+        gap: 10px;
+        flex-shrink: 0;
+        align-items: center;
+    }
+
+    .top_bar a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .top_bar i {
+        margin-right: 4px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 0 16px;
+        height: 60px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #main-nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        z-index: 999;
+        padding: 0;
+        border-top: 2px solid #0d6efd;
+    }
+
+    #main-nav.open {
+        display: block;
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    #main-nav ul li {
+        width: 100%;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    #main-nav ul li a {
+        display: block;
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+
+    .dropdown-menu {
+        position: static !important;
+        display: none;
+        background: #f8fafc;
+        box-shadow: none;
+        padding: 0;
+        min-width: 100%;
+    }
+
+    .dropdown.dropdown-open .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li a {
+        padding: 12px 32px !important;
+        font-size: 14px !important;
+    }
+
+    /* SERVICE HERO */
+    .service-hero {
+        height: auto;
+        padding: 40px 16px;
+    }
+
+    /* SERVICE INFORMATION */
+    .service-information {
+        padding: 40px 0;
+    }
+
+    .service-information .i-container {
+        width: 95%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-information .i-container .left {
+        padding: 24px 16px;
+        width: 100%;
+    }
+
+    .service-information .i-container .left h2 {
+        font-size: 28px;
+    }
+
+    .service-information .i-container .left .grid {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .service-information .i-container .left .benifit {
+        width: 100%;
+        height: auto;
+        padding: 18px;
+    }
+
+    .service-information .i-container .left .benifit-item {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .service-information .i-container .alert.alert-warning {
+        width: 100%;
+    }
+
+    .service-information .i-container .right {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        padding: 24px 16px;
+    }
+
+    .service-information .i-container .right .box h1 {
+        font-size: 38px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        padding: 0;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .footer-about img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* TOP BAR — keep as single row, just tighter */
+    .top_bar .container {
+        padding: 0 10px;
+        height: 40px;
+    }
+
+    .top_bar a {
+        font-size: 11px;
+    }
+
+    .top_bar .container .left {
+        gap: 10px;
+    }
+
+    .top_bar .container .right {
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 155px;
+    }
+
+    .service-information .i-container .left h2 {
+        font-size: 24px;
+    }
+
+    .service-information .i-container .right .box h1 {
+        font-size: 32px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-about img {
+        width: 160px;
+    }
+}

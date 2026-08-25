@@ -316,3 +316,198 @@
     margin-left: 60rem;
     margin-top: -100px;
 }
+
+
+/* =====================================================
+   STYLE4.CSS (TESTIMONIALS) RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .tm_box-content {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 24px 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .tm_box-seconditem {
+        gap: 2rem;
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .carousel-inner {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .morereviews_card-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 30px 20px;
+        gap: 24px;
+    }
+
+    .testi-box {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+        padding: 24px 20px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .testi-link {
+        margin-left: 0;
+        margin-top: 0;
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* HERO BANNER */
+    .testimonials {
+        padding: 50px 0;
+    }
+
+    .tesimonials-heading {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .testimonials-para {
+        font-size: 15px;
+    }
+
+    /* RATING BOX */
+    .tm_box-content {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 16px;
+        gap: 16px;
+        box-sizing: border-box;
+    }
+
+    .dc-rating-divider {
+        display: none;
+    }
+
+    .tm_box-seconditem {
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .tm_box-content h3 {
+        font-size: 1.5rem;
+    }
+
+    /* REVIEWS CAROUSEL */
+    .testimonoals-reviews {
+        margin-top: 2rem;
+        padding: 0 16px;
+    }
+
+    .carousel-inner {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .tm-testi-slide {
+        padding: 24px;
+        margin-bottom: 16px;
+    }
+
+    /* MORE REVIEWS */
+    .morereviews {
+        margin-top: 3rem;
+    }
+
+    .morereviews-heading {
+        font-size: clamp(22px, 5vw, 30px);
+        padding: 0 16px;
+    }
+
+    .morereviews_card-content {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    .morereviews_card-item {
+        width: 100%;
+    }
+
+    .morereviews_card-item strong {
+        margin-left: 0;
+    }
+
+    /* CTA BOX */
+    .testi-box {
+        margin-left: 16px;
+        margin-right: 16px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 16px;
+        gap: 12px;
+        border-radius: 16px;
+        margin-bottom: 2rem;
+    }
+
+    .testi_box-item {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .testi_box-item h4 {
+        font-size: 18px;
+    }
+
+    .testi-link {
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .tesimonials-heading {
+        font-size: 26px;
+    }
+
+    .testimonials-para {
+        font-size: 14px;
+    }
+
+    .tm_box-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .tm-testi-slide {
+        padding: 18px;
+    }
+
+    .morereviews_card-content {
+        padding: 16px;
+        gap: 16px;
+    }
+}

@@ -1169,13 +1169,13 @@
 
 @media (max-width: 768px) {
 
-    /* ENGINEERING HERO */
     .engineering-counseling {
         padding: 50px 0;
     }
 
     .engineering-title {
-        font-size: 32px;
+        font-size: 34px;
+        line-height: 1.2;
     }
 
     .engineering-para {

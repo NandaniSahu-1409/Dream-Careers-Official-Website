@@ -363,3 +363,121 @@ button.btn-primary {
     align-items: center;
     height: 3rem;
 }
+
+
+/* =====================================================
+   PAID.CSS (PAID COUNSELING) RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .pc-container {
+        flex-direction: column;
+        padding: 16px 20px;
+    }
+
+    .pc-left {
+        flex: none;
+        width: 100%;
+        padding: 30px 24px;
+    }
+
+    .pc-right {
+        flex: none;
+        width: 100%;
+        padding: 30px 24px;
+    }
+
+    .pc-thirteen {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .paid-counseling {
+        padding: 50px 0;
+    }
+
+    .paid-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .paid-para {
+        font-size: 15px;
+    }
+
+    /* MAIN SECTION */
+    .pc-section {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .pc-container {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    .pc-left {
+        flex: none;
+        width: 100%;
+        padding: 24px 16px;
+        border-radius: 12px;
+    }
+
+    .pc-three {
+        font-size: 1.5rem;
+    }
+
+    .pc-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .pc-row1 {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .pc-right {
+        flex: none;
+        width: 100%;
+        padding: 24px 16px;
+        border-radius: 12px;
+    }
+
+    .pc-thirteen {
+        width: 100%;
+        height: auto;
+        padding: 14px;
+    }
+
+    .pc-fivteen {
+        height: auto;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .paid-title {
+        font-size: 26px;
+    }
+
+    .paid-para {
+        font-size: 14px;
+    }
+
+    .pc-three {
+        font-size: 1.3rem;
+    }
+
+    .pc-left,
+    .pc-right {
+        padding: 20px 14px;
+    }
+}

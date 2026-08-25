@@ -57,3 +57,39 @@
 .law-breadcrumb span {
     color: white;
 }
+
+
+/* =====================================================
+   LAW.CSS (LAW & MANAGEMENT) RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .law-counseling {
+        padding: 50px 0;
+    }
+
+    .law-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .law-para {
+        font-size: 15px;
+    }
+
+    .law-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .law-title {
+        font-size: 26px;
+    }
+
+    .law-para {
+        font-size: 14px;
+    }
+}

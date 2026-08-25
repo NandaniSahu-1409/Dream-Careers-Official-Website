@@ -106,3 +106,86 @@
     display: flex;
     justify-content: space-around;
 }
+
+
+/* =====================================================
+   ABOUT.CSS RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .nabout-body {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 20px;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nabout-body .nabout-item {
+        width: auto;
+        flex: 1;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .about {
+        padding: 50px 0;
+    }
+
+    .about-heading {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .about-para {
+        font-size: 15px;
+    }
+
+    /* STATS BAR */
+    .about-content {
+        padding: 24px 0;
+    }
+
+    .nabout-body {
+        flex-direction: column;
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 16px;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .nabout-body .nabout-item {
+        width: 100%;
+        padding: 16px 20px;
+    }
+
+    .nabout-body .num {
+        font-size: 32px;
+    }
+
+    .nabout-body h4 {
+        font-size: 13px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about-heading {
+        font-size: 26px;
+    }
+
+    .about-para {
+        font-size: 14px;
+    }
+
+    .nabout-body .num {
+        font-size: 28px;
+    }
+}

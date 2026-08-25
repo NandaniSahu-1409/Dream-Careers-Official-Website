@@ -387,3 +387,133 @@ button.btn-primary {
     border-radius: 8px;
 
 }
+
+
+/* =====================================================
+   FREE_PAID.CSS (FREE COUNSELING) RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .fcc-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .fcc-left {
+        padding: 30px 24px;
+    }
+
+    .fcc-box {
+        padding: 24px;
+    }
+
+    .fcc-thirteen {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .Free-counseling {
+        padding: 50px 0;
+    }
+
+    .Free_counseling-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .Free_counseling-para {
+        font-size: 15px;
+    }
+
+    /* MAIN SECTION */
+    .fcc-section {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .fcc-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 16px;
+        max-width: 100%;
+    }
+
+    .fcc-left {
+        padding: 24px 16px;
+        border-radius: 16px;
+    }
+
+    .fcc-three {
+        font-size: 1.5rem;
+    }
+
+    .fcc-four {
+        font-size: 15px;
+    }
+
+    .fcc-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .fcc-eight {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 16px;
+        gap: 16px;
+    }
+
+    .fcc-nine {
+        width: 100%;
+    }
+
+    .fcc-nine a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* RIGHT SIDEBAR */
+    .fcc-box {
+        padding: 24px 16px;
+        border-radius: 16px;
+    }
+
+    .fcc-twelve h2 {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .fcc-thirteen {
+        width: 100%;
+        height: auto;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .Free_counseling-title {
+        font-size: 26px;
+    }
+
+    .Free_counseling-para {
+        font-size: 14px;
+    }
+
+    .fcc-three {
+        font-size: 1.3rem;
+    }
+
+    .fcc-left {
+        padding: 20px 14px;
+    }
+
+    .fcc-box {
+        padding: 20px 14px;
+    }
+}
