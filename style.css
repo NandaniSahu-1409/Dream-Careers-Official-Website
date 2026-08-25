@@ -472,42 +472,125 @@ nav ul li a i {
     flex: 0.9;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .slider-image-wrapper {
-    background: #fff;
-    padding: 12px;
+    background: #f1f5f9;
+    padding: 0;                          /* image fills edge-to-edge */
     border-radius: 24px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 580px;
+    height: 480px;                       /* tall card matching target */
+}
+
+/* ── Slide show/hide ── */
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide.active {
+    display: block;
     position: relative;
 }
 
-.slider-image-wrapper img {
+/* ── Slide animation classes (added by JS) ── */
+.slide.slide-in-right {
+    animation: slideInRight 0.42s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.slide.slide-in-left {
+    animation: slideInLeft 0.42s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.slide.slide-out-left {
+    animation: slideOutLeft 0.42s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.slide.slide-out-right {
+    animation: slideOutRight 0.42s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0.4; }
+    to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0.4; }
+    to   { transform: translateX(0);     opacity: 1; }
+}
+
+@keyframes slideOutLeft {
+    from { transform: translateX(0);    opacity: 1; }
+    to   { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes slideOutRight {
+    from { transform: translateX(0);   opacity: 1; }
+    to   { transform: translateX(100%); opacity: 0; }
+}
+
+/* ── Image fills the fixed-height box perfectly ── */
+.slide img {
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    border-radius: 16px;
+    object-position: center top;
+    border-radius: 24px;
     display: block;
 }
 
+/* ── Dot indicators below the card ── */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 16px;
+}
+
+.slider-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.slider-dot.active {
+    background: #2563eb;
+    transform: scale(1.3);
+}
+
+/* ── Prev / Next buttons — positioned OUTSIDE the card ── */
 .hero-slider button {
     position: absolute;
-    top: 50%;
+    top: calc(480px / 2);              /* vertically centred against the card */
     transform: translateY(-50%);
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
     border: none;
     border-radius: 50%;
     background: #fff;
-    color: #64748b;
-    font-size: 18px;
+    color: #334155;
+    font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
-    z-index: 10;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+    transition: background 0.25s, color 0.25s, box-shadow 0.25s;
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -516,6 +599,49 @@ nav ul li a i {
 .hero-slider button:hover {
     background: #2563eb;
     color: #fff;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+}
+
+.prev {
+    left: -22px;                        /* half the button width = sits on edge */
+}
+
+.next {
+    right: -22px;
+}
+
+/* ── Dot indicators ── */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 14px;
+}
+
+.slider-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.slider-dot.active {
+    background: #2563eb;
+    transform: scale(1.3);
+}
+
+/* Keep old rule for any remaining direct img references */
+.slider-image-wrapper > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 24px;
+    display: block;
 }
 
 .prev {
@@ -528,21 +654,21 @@ nav ul li a i {
 
 .trusted-badge {
     position: absolute;
-    bottom: -20px;
+    bottom: 18px;
     left: 50%;
     transform: translateX(-50%);
     background: #fff;
     color: #2563eb;
-    padding: 12px 24px;
+    padding: 10px 22px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     display: flex;
     align-items: center;
     gap: 8px;
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.22);
     white-space: nowrap;
-    z-index: 10;
+    z-index: 15;
 }
 
 .cards {
@@ -1531,27 +1657,27 @@ nav ul li a i {
     }
 
     .slider-image-wrapper {
-        border-radius: 16px;
-        padding: 8px;
-    }
-
-    .slider-image-wrapper img {
+        border-radius: 20px;
+        padding: 0;
         max-width: 100%;
-        border-radius: 12px;
+        height: 320px;
     }
 
-    .prev {
-        left: -5px;
+    .slide img {
+        border-radius: 20px;
     }
 
-    .next {
-        right: -5px;
+    .hero-slider button {
+        top: calc(320px / 2);
     }
+
+    .prev { left: 4px; }
+    .next { right: 4px; }
 
     .trusted-badge {
         font-size: 12px;
-        padding: 10px 16px;
-        bottom: -15px;
+        padding: 9px 16px;
+        bottom: 14px;
     }
 
     /* GRID: service info */
@@ -1647,6 +1773,33 @@ nav ul li a i {
    ===================================================== */
 
 @media (max-width: 480px) {
+
+    /* SLIDER — smaller fixed height on phones */
+    .slider-image-wrapper {
+        height: 240px;
+        padding: 0;
+        border-radius: 16px;
+    }
+
+    .slide img {
+        border-radius: 16px;
+    }
+
+    .hero-slider button {
+        top: calc(240px / 2);
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .prev { left: 4px; }
+    .next { right: 4px; }
+
+    .trusted-badge {
+        font-size: 11px;
+        padding: 8px 14px;
+        bottom: 12px;
+    }
 
     /* TOP BAR — keep as single row, just tighter */
     .top_bar .container {

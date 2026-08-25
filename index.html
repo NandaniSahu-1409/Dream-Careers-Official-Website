@@ -181,17 +181,24 @@
 
             <div class="hero-slider">
 
-                <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="prev" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
 
                 <div class="slider-image-wrapper">
-                    <img id="slider" src="img2.jpeg" alt="Banner">
+                    <div class="slide active">
+                        <img src="img2.jpeg" alt="Dream Careers Banner">
+                    </div>
+                    <div class="slide">
+                        <img src="banner1.jpg" alt="Dream Careers Banner 2">
+                    </div>
+
+                    <div class="trusted-badge">
+                        <i class="fa-solid fa-circle-check"></i> Trusted by 18,000+ Students
+                    </div>
                 </div>
 
-                <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+                <button class="next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
 
-                <div class="trusted-badge">
-                    <i class="fa-solid fa-circle-check"></i> Trusted by 18,000+ Students
-                </div>
+                <!-- <div class="slider-dots" id="sliderDots"></div> -->
 
             </div>
 
@@ -1159,6 +1166,86 @@
 </body>
 
 <script>
+    /* ============================================================
+       HERO IMAGE SLIDER
+       ============================================================ */
+    (function () {
+        const wrapper = document.querySelector('.slider-image-wrapper');
+        const slides = wrapper ? Array.from(wrapper.querySelectorAll('.slide')) : [];
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dotsWrap = document.getElementById('sliderDots');
+
+        if (slides.length < 2) return;   // nothing to do with 0 or 1 slide
+
+        let current = 0;
+        let animating = false;
+        let autoTimer;
+        const DURATION = 450; // ms — must match CSS animation duration
+
+        /* ── Build dot indicators ── */
+        const dots = slides.map((_, i) => {
+            const d = document.createElement('button');
+            d.className = 'slider-dot' + (i === 0 ? ' active' : '');
+            d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+            d.addEventListener('click', () => goTo(i, i >= current ? 'next' : 'prev'));
+            dotsWrap && dotsWrap.appendChild(d);
+            return d;
+        });
+
+        function updateDots(i) {
+            dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
+        }
+
+        /* ── Core transition ── */
+        function goTo(next, dir) {
+            if (animating || next === current) return;
+            animating = true;
+
+            const outSlide = slides[current];
+            const inSlide = slides[next];
+
+            /* outgoing: hide via animation */
+            outSlide.classList.add(dir === 'next' ? 'slide-out-left' : 'slide-out-right');
+
+            /* incoming: show and animate in */
+            inSlide.style.display = 'block';
+            inSlide.classList.add(dir === 'next' ? 'slide-in-right' : 'slide-in-left');
+
+            setTimeout(() => {
+                /* clean up outgoing */
+                outSlide.classList.remove('active', 'slide-out-left', 'slide-out-right');
+                outSlide.style.display = '';
+
+                /* confirm incoming */
+                inSlide.classList.remove('slide-in-right', 'slide-in-left');
+                inSlide.classList.add('active');
+
+                current = next;
+                animating = false;
+                updateDots(current);
+            }, DURATION);
+        }
+
+        function goPrev() { goTo((current - 1 + slides.length) % slides.length, 'prev'); }
+        function goNext() { goTo((current + 1) % slides.length, 'next'); }
+
+        /* ── Button clicks only — no auto-play ── */
+        prevBtn.addEventListener('click', () => goPrev());
+        nextBtn.addEventListener('click', () => goNext());
+
+        /* ── Touch / swipe support ── */
+        let tx = 0;
+        wrapper.addEventListener('touchstart', e => { tx = e.changedTouches[0].clientX; }, { passive: true });
+        wrapper.addEventListener('touchend',   e => {
+            const diff = tx - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 40) { diff > 0 ? goNext() : goPrev(); }
+        }, { passive: true });
+    })();
+
+    /* ============================================================
+       FAQ ACCORDION
+       ============================================================ */
     function toggleFaq(btn) {
         const item = btn.parentElement;
         const answer = item.querySelector('.faq-answer');
