@@ -1,3 +1,4 @@
+html, body { overflow-x: hidden; max-width: 100%; }
 .paid-counseling {
     background: #112344;
     padding: 80px 0;
@@ -480,4 +481,16 @@ button.btn-primary {
     .pc-right {
         padding: 20px 14px;
     }
+}
+
+@media (max-width: 430px) {
+    .paid-counseling { padding: 36px 0 !important; }
+    .pc-heading { font-size: 22px !important; }
+    .pc-container { padding: 0 12px !important; flex-direction: column; gap: 16px; }
+    .pc-left,
+    .pc-right { width: 100% !important; padding: 18px 14px !important; }
+    .pc-three { font-size: 1.3rem !important; }
+    .pc-row { grid-template-columns: 1fr !important; gap: 12px; }
+    .pc-row1 { flex-direction: column; gap: 14px; }
+    .pc-thirteen { width: 100% !important; height: auto !important; }
 }

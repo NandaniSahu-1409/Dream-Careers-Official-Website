@@ -70,6 +70,7 @@
 }
 
 .engineering-box-body {
+    overflow-x: hidden;
     width: 100%;
 }
 
@@ -1123,6 +1124,24 @@
     font-family: Arial, sans-serif;
 }
 
+.engineering-why-dc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 2.5rem;
+}
+
+.engineering-why-dc .engineering-programs-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.engineering-why-dc .engineering-programs-item span {
+    margin: 0 auto 18px auto;
+}
+
 /* =====================================================
    ENGI.CSS RESPONSIVE — TABLET (max 1024px)
    ===================================================== */
@@ -1149,6 +1168,10 @@
     }
 
     .counseling-servies-carditem {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .engineering-why-dc-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1294,6 +1317,11 @@
         padding: 24px;
     }
 
+    .engineering-why-dc-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     /* BTN */
     .btn {
         width: 100%;
@@ -1350,4 +1378,142 @@
     .engineering-box-item .num {
         font-size: 28px;
     }
+}
+
+/* Track Record Section */
+.engineering-track-record {
+    background-color: #3b82f6;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.track-record-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.track-record-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.track-record-header p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 50px;
+}
+
+.track-record-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-item h3 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* CTA Section */
+.engineering-cta {
+    padding: 40px 0 80px 0;
+    font-family: Arial, sans-serif;
+}
+
+.cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.cta-box {
+    background: linear-gradient(90deg, #1d64e8, #0ea5e9);
+    border-radius: 16px;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cta-text h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.cta-text p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.cta-button {
+    background: white;
+    color: #1d64e8;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .cta-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 430px) {
+    .engineering-counseling { padding: 36px 0 !important; }
+    .engineering-title { font-size: 22px !important; }
+    .engineering-para { font-size: 13px !important; }
+    .engineering-box-content { padding: 0 12px !important; flex-direction: column; gap: 12px; }
+    .engineering-box-item { flex: 1 1 100% !important; }
+    .engineering-programs-card-item,
+    .engineering-education-cards-item,
+    .engineering-investment-grid,
+    .engineering-popular-branches-grid,
+    .engineering-counseling-process .engineering-programs-card-item,
+    .counseling-servies-carditem,
+    .engineering-why-dc-grid { grid-template-columns: 1fr !important; }
+    .engineering-programs-container,
+    .engineering-education-container,
+    .engineering-counseling-process-container,
+    .engineering-popular-branches-container,
+    .engineering-investment-container,
+    .engineering-right-choice-container { padding: 0 12px !important; max-width: 100% !important; }
+    .engineering-programs-heading,
+    .engineering-education-heading,
+    .engineering-counseling-process-heading,
+    .engineering-popular-branches-heading,
+    .engineering-investment-heading,
+    .engineering-right-choice-heading { font-size: 20px !important; }
+    .investment-card { padding: 20px 14px !important; }
+    .engineering-right-choice-grid { grid-template-columns: 1fr !important; }
+    .engineering-cta-box { flex-direction: column; gap: 14px; padding: 20px 14px; }
+    .engineering-cta-box .btn { width: 100%; }
+    .right-choice-grid { grid-template-columns: 1fr !important; }
 }

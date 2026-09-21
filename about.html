@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Careers Website</title>
     <!-- to get color and perfect design  -->
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="about.css">
 
 
@@ -15,9 +15,12 @@
 </head>
 
 <body>
-    <div class="top_bar">
-        <div class="container">
-            <div class="left">
+    <header class="site-header">
+
+        <!-- TOP BAR -->
+        <div class="top_bar">
+            <div class="top_bar_left">
+
                 <a href="mailto:help@dreamcareers.co.in">
                     <i class="fa-solid fa-envelope"></i>
                     help@dreamcareers.co.in
@@ -27,73 +30,164 @@
                     <i class="fa-solid fa-phone"></i>
                     +91 95222 91191
                 </a>
-            </div>
-            <div class="right">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
             </div>
 
+            <div class="top_bar_right">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
         </div>
-    </div>
-
-    <header class="navbar">
-
-        <div class="logo">
-            <img src="logopic.png" alt="Dream Careers">
-        </div>
-
-        <nav>
-            <ul>
-
-                <li><a href="index.html">Home</a></li>
-
-                <li><a href="services.html">Services</a></li>
-
-                <li class="dropdown">
-                    <a href="#">
-                        Counseling
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li><a href="free counseling.html">Free Counseling</a></li>
-                        <li><a href="paid counseling.html">Paid Counseling</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#">
-                        Programs
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li><a href="medical.html">Medical</a></li>
-                        <li><a href="engineering.html">Engineering</a></li>
-                        <li><a href="bsc nursing.html">B.Sc Nursing</a></li>
-                        <li><a href="pharmacy.html">Pharmacy</a></li>
-                        <li><a href="law-management.html">Law & Management</a></li>
-                    </ul>
-                </li>
-
-
-                <li><a href="mbbs abroad.html">MBBS Abroad</a></li>
-
-                <li><a href="studyabroad.html">Study Abroad</a></li>
-
-                <li><a href="testimonials.html">Testimonials</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
-
-                <li><a href="about.html" class="active">About</a></li>
-
-            </ul>
-        </nav>
 
     </header>
+        <div class="navbar">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logopic.png" alt="Dream Careers">
+                </a>
+            </div>
+
+
+            <!-- NAVIGATION -->
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+<nav id="main-nav">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+
+                    <!-- COUNSELING -->
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle">
+                            Counseling
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="free counseling.html">
+                                    Free Counseling
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="paid counseling.html">
+                                    Paid Counseling
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- PROGRAMS -->
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle">
+                            Programs
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="medical.html">Medical</a>
+                            </li>
+
+                            <li>
+                                <a href="engineering.html">Engineering</a>
+                            </li>
+
+                            <li>
+                                <a href="bsc nursing.html">B.Sc Nursing</a>
+                            </li>
+
+                            <li>
+                                <a href="pharmacy.html">Pharmacy</a>
+                            </li>
+
+                            <li>
+                                <a href="law-management.html">
+                                    Law & Management
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li>
+                        <a href="mbbs abroad.html">
+                            MBBS Abroad
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="studyabroad.html">
+                            Study Abroad
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="testimonials.html">
+                            Testimonials
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="active">
+                            About
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
 
     <section class="about">
         <div class="about-container">
@@ -151,55 +245,469 @@
 
     </section>
 
-
-    <section about-info>
-        <div class="ac-container">
-            <div class="ac-card">
-                <div class="ac_card-content">
-                    <div class="ac_right-side">
-                        <div class="ac_card-item">
-
-                            <img src="about.jpg" alt="">
-                            <div>
-                                <i class="fa-solid fa-award"></i>
-                                <div>
-                                    <span class="num">8+</span>
-                                    <h4>Years of Trusted Guidance</h4>
-                                </div>
-
-                            </div>
-
-                        </div>
-
+    <!-- ===== OUR STORY SECTION ===== -->
+    <section class="our-story-section">
+        <div class="os-container">
+            <!-- Left Side (Image & Floating Card) -->
+            <div class="os-image-wrapper">
+                <img src="about.jpg" alt="Dream Careers Lab" class="os-image">
+                <div class="os-floating-card">
+                    <div class="os-fc-icon">
+                        <i class="fa-solid fa-award"></i>
                     </div>
-
-                    <div class="ac_right-side">
-                        <span>Our Story</span>
-                        <h2>Our Journey Toward Innovation and Student Success</h2>
-                        <p>At Dream Careers, we are dedicated to empowering students and professionals by helping them
-                            make informed decisions about their educational and career paths. As a trusted education
-                            consultancy based in Bhilai, Chhattisgarh, we offer personalized guidance, expert
-                            counseling, and access to a wide range of academic and career-building opportunities.</p>
-
-                        <p>Our team of experienced career mentors and education specialists work closely with
-                            individuals to understand their aspirations, strengths, and goals. Whether you're a student
-                            seeking the right course or a professional considering a career shift, we ensure you receive
-                            clear direction and unwavering support.
-
-                        </p>
-                        <div>
-                            <a href="free counseling.html">Free Counseling</a>
-                            <!-- <button type="button" class="sb_package-btn">Contact Us</button> -->
-                        </div>
-
+                    <div class="os-fc-text">
+                        <span class="os-fc-num">8+</span>
+                        <span class="os-fc-label">Years of Trusted Guidance</span>
                     </div>
+                </div>
+            </div>
 
+            <!-- Right Side (Content) -->
+            <div class="os-content">
+                <span class="os-badge">OUR STORY</span>
+                <h2 class="os-title">Our Journey Toward Innovation and Student Success</h2>
+                <p class="os-para">At Dream Careers, we are dedicated to empowering students and professionals by
+                    helping them make informed decisions about their educational and career paths. As a trusted
+                    education consultancy based in Bhilai, Chhattisgarh, we offer personalized guidance, expert
+                    counselling, and access to a wide range of academic and career-building opportunities.</p>
+                <p class="os-para">Our team of experienced career mentors and education specialists work closely with
+                    individuals to understand their aspirations, strengths, and goals. Whether you're a student seeking
+                    the right course or a professional considering a career shift, we ensure you receive clear direction
+                    and unwavering support.</p>
+                <div class="os-buttons">
+                    <a href="free counseling.html" class="os-btn-primary">Free Counselling</a>
+                    <a href="contact.html" class="os-btn-secondary">Contact Us</a>
                 </div>
             </div>
         </div>
-
     </section>
- 
+
+    <!-- ===== CORE VALUES SECTION ===== -->
+    <section class="core-values-section">
+        <div class="cv-container">
+            <div class="cv-header">
+                <span class="cv-badge">WHAT DRIVES US</span>
+                <h2 class="cv-title">Our Core Values</h2>
+                <p class="cv-para">These principles guide everything we do in our commitment to exceptional career
+                    counselling.</p>
+            </div>
+
+            <div class="cv-grid">
+                <!-- Card 1 -->
+                <div class="cv-card">
+                    <div class="cv-icon cv-icon-red">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4>Compassion</h4>
+                    <p>Providing guidance with empathy and understanding for every student's unique needs and
+                        aspirations.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="cv-card">
+                    <div class="cv-icon cv-icon-blue">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4>Excellence</h4>
+                    <p>Maintaining the highest standards of counselling through continuous learning and innovation.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="cv-card">
+                    <div class="cv-icon cv-icon-green">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h4>Integrity</h4>
+                    <p>Building trust through honest communication and ethical practices in all our interactions.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="cv-card">
+                    <div class="cv-icon cv-icon-orange">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+                    <h4>Innovation</h4>
+                    <p>Embracing new approaches and tools to improve student outcomes and career success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROGRAMS SECTION ===== -->
+    <section class="programs-section">
+        <div class="prog-container">
+            <div class="prog-header">
+                <span class="prog-badge">OUR PROGRAMS</span>
+                <h2 class="prog-title">Programs We Specialize In</h2>
+                <p class="prog-para">Comprehensive counselling services across all major educational streams</p>
+            </div>
+
+            <div class="prog-grid">
+                <!-- Program 1: Medical -->
+                <div class="prog-card">
+                    <div class="prog-icon prog-icon-red">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4>MBBS / Medical</h4>
+                    <p class="prog-desc">Complete guidance for MBBS, BDS, BAMS, and all medical programs</p>
+                    <ul class="prog-features prog-feat-red">
+                        <li><i class="fa-solid fa-circle-check"></i> NEET Counselling</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Top Medical Colleges</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Seat Allocation</li>
+                    </ul>
+                    <a href="medical.html" class="prog-link">Explore Program &rarr;</a>
+                </div>
+
+                <!-- Program 2: Engineering -->
+                <div class="prog-card">
+                    <div class="prog-icon prog-icon-blue">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <h4>Engineering</h4>
+                    <p class="prog-desc">Expert Counselling for B.Tech, Diploma, and Polytechnic programs</p>
+                    <ul class="prog-features prog-feat-blue">
+                        <li><i class="fa-solid fa-circle-check"></i> JEE Counselling</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 3,500+ Colleges</li>
+                        <li><i class="fa-solid fa-circle-check"></i> All Branches</li>
+                    </ul>
+                    <a href="engineering.html" class="prog-link">Explore Program &rarr;</a>
+                </div>
+
+                <!-- Program 3: Nursing -->
+                <div class="prog-card">
+                    <div class="prog-icon prog-icon-green">
+                        <i class="fa-solid fa-hospital"></i>
+                    </div>
+                    <h4>Nursing</h4>
+                    <p class="prog-desc">B.Sc Nursing, GNM, and Post Basic Nursing admission support</p>
+                    <ul class="prog-features prog-feat-green">
+                        <li><i class="fa-solid fa-circle-check"></i> Career Guidance</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Top Nursing Colleges</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Placement Support</li>
+                    </ul>
+                    <a href="bsc nursing.html" class="prog-link">Explore Program &rarr;</a>
+                </div>
+
+                <!-- Program 4: Pharmacy -->
+                <div class="prog-card">
+                    <div class="prog-icon prog-icon-purple">
+                        <i class="fa-solid fa-capsules"></i>
+                    </div>
+                    <h4>Pharmacy</h4>
+                    <p class="prog-desc">B.Pharm and D.Pharm admission Counselling and guidance</p>
+                    <ul class="prog-features prog-feat-purple">
+                        <li><i class="fa-solid fa-circle-check"></i> GPAT Guidance</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Top Pharmacy Colleges</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Career Options</li>
+                    </ul>
+                    <a href="pharmacy.html" class="prog-link">Explore Program &rarr;</a>
+                </div>
+
+                <!-- Program 5: Study Abroad -->
+                <div class="prog-card">
+                    <div class="prog-icon prog-icon-orange">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h4>Study Abroad</h4>
+                    <p class="prog-desc">End-to-end support for international education opportunities</p>
+                    <ul class="prog-features prog-feat-orange">
+                        <li><i class="fa-solid fa-circle-check"></i> Visa Assistance</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Global Universities</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Scholarship Help</li>
+                    </ul>
+                    <a href="studyabroad.html" class="prog-link">Explore Program &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERTISE SECTION ===== -->
+    <section class="expertise-section">
+        <div class="exp-container">
+            <div class="exp-header">
+                <span class="exp-badge">OUR EXPERTISE</span>
+                <h2 class="exp-title">Programs We Counsel For</h2>
+                <p class="exp-para">Over 11 years of specialized counselling across every major educational stream in
+                    India and abroad</p>
+            </div>
+
+            <div class="exp-grid">
+                <!-- Exp Card 1 -->
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div class="exp-icon exp-icon-red">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h4>Medical (NEET UG)</h4>
+                    </div>
+                    <p class="exp-highlight exp-text-red">MBBS, BDS, BAMS, BHMS, BUMS, BNYS, BVSc & AH, B.Sc Nursing,
+                        BPT</p>
+                    <p class="exp-desc">1.29 Lakh seats across India. Expert NEET counselling for all medical programs.
+                    </p>
+                    <a href="medical.html" class="exp-link exp-text-red">Learn More &rarr;</a>
+                </div>
+
+                <!-- Exp Card 2 -->
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div class="exp-icon exp-icon-blue">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <h4>Engineering (JEE)</h4>
+                    </div>
+                    <p class="exp-highlight exp-text-blue">CSE, AI/ML, Data Science, Cyber Security, Civil, Mechanical,
+                        Electrical, ECE, Diploma</p>
+                    <p class="exp-desc">5,800+ engineering colleges. JEE Main, State CETs, and direct admission support.
+                    </p>
+                    <a href="engineering.html" class="exp-link exp-text-blue">Learn More &rarr;</a>
+                </div>
+
+                <!-- Exp Card 3 -->
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div class="exp-icon exp-icon-pink">
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <h4>B.Sc Nursing</h4>
+                    </div>
+                    <p class="exp-highlight exp-text-pink">B.Sc Nursing, GNM, ANM, Post Basic B.Sc, M.Sc Nursing</p>
+                    <p class="exp-desc">3,000+ nursing colleges. Career in hospitals, defence, international healthcare.
+                    </p>
+                    <a href="bsc nursing.html" class="exp-link exp-text-pink">Learn More &rarr;</a>
+                </div>
+
+                <!-- Exp Card 4 -->
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div class="exp-icon exp-icon-green">
+                            <i class="fa-solid fa-capsules"></i>
+                        </div>
+                        <h4>Pharmacy</h4>
+                    </div>
+                    <p class="exp-highlight exp-text-green">B.Pharmacy (4 Yrs), D.Pharmacy (2 Yrs), M.Pharmacy, Pharm.D
+                    </p>
+                    <p class="exp-desc">Own medical license after graduation. Hospital, industry, government, and retail
+                        careers.</p>
+                    <a href="pharmacy.html" class="exp-link exp-text-green">Learn More &rarr;</a>
+                </div>
+
+                <!-- Exp Card 5 -->
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div class="exp-icon exp-icon-purple">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h4>Study Abroad MBBS</h4>
+                    </div>
+                    <p class="exp-highlight exp-text-purple">Russia, Georgia, Kyrgyzstan, Kazakhstan, Philippines,
+                        China, Nepal, Bangladesh</p>
+                    <p class="exp-desc">NMC & WHO recognized universities. No donation, direct admission, affordable
+                        fees.</p>
+                    <a href="mbbs abroad.html" class="exp-link exp-text-purple">Learn More &rarr;</a>
+                </div>
+
+                <!-- Exp Card 6 -->
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div class="exp-icon exp-icon-orange">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h4>Management & Law</h4>
+                    </div>
+                    <p class="exp-highlight exp-text-orange">MBA, BBA, LLB, BA LLB, BBA LLB, LLM, Hotel Management,
+                        Fashion Design</p>
+                    <p class="exp-desc">CAT, MAT, CLAT guidance. Top B-schools and law colleges across India.</p>
+                    <a href="law-management.html" class="exp-link exp-text-orange">Learn More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PURPOSE / MISSION SECTION ===== -->
+    <section class="purpose-section">
+        <div class="purpose-container">
+            <!-- Left Side -->
+            <div class="purpose-left">
+                <span class="purpose-badge">OUR PURPOSE</span>
+                <h2 class="purpose-title">Delivering Meaningful, Customized Educational Solutions</h2>
+                <p class="purpose-para">We believe that every student deserves the right path to success. Our mission is
+                    to make the journey of choosing the perfect college and course seamless, inspiring, and empowering.
+                </p>
+                <a href="services.html" class="purpose-btn">Explore Our Services</a>
+            </div>
+
+            <!-- Right Side -->
+            <div class="purpose-right">
+                <div class="purpose-item">
+                    <div class="purpose-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div class="purpose-item-text">
+                        <h4>Our Mission</h4>
+                        <p>Bridge the gap between aspirations and achievements by offering personalized counselling,
+                            expert guidance, and up-to-date information — unlocking a world of opportunities for every
+                            dreamer.</p>
+                    </div>
+                </div>
+
+                <div class="purpose-item">
+                    <div class="purpose-icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="purpose-item-text">
+                        <h4>Our Vision</h4>
+                        <p>To be the most trusted career counselling partner in Central India, helping every student
+                            make confident, informed decisions about their future.</p>
+                    </div>
+                </div>
+
+                <div class="purpose-item">
+                    <div class="purpose-icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div class="purpose-item-text">
+                        <h4>Our Promise</h4>
+                        <p>We are more than just counselors — we are mentors who help you take confident steps toward
+                            your career, ensuring your dreams turn into reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">
+                <span class="faq-badge">FREQUENTLY ASKED QUESTIONS</span>
+                <h2 class="faq-title">Learn More About Dream Careers</h2>
+                <p class="faq-para">Common questions about our company, team, and approach to career counselling</p>
+            </div>
+
+            <div class="faq-grid">
+                <!-- Column 1 -->
+                <div class="faq-col">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            When was Dream Careers established?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Dream Careers was established in 2016 and has since grown to become one of the most
+                                trusted education consultancies in Central India, with over 18,000 students counselled.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Who are the counselors at Dream Careers?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our team includes 50+ certified career experts with deep expertise across medical,
+                                engineering, law, management, and study abroad programs. Each counselor is trained to
+                                provide personalized guidance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            What is your counselling approach?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We follow a personalized, student-centric approach — understanding each student's
+                                interests, academic background, and career goals before recommending the best-fit
+                                programs and colleges.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Do you have tie-ups with colleges?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we have partnerships with 500+ colleges across India and abroad. This helps us
+                                secure the best seats and direct admissions for our students at competitive fees.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            What is your success rate?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We maintain a 98% student satisfaction rate with over 18,000 students successfully placed
+                                in their desired programs. Our track record speaks for itself.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="faq-col">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            What makes Dream Careers trustworthy?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>With 8+ years of experience, transparent processes, 18,000+ successful admissions, and
+                                offices in Bhilai and Noida, Dream Careers has built a reputation on trust, integrity,
+                                and results.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Do you provide post-admission support?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. Our support doesn't end at admission. We assist students with documentation,
+                                orientation, hostel guidance, and career planning even after they join their
+                                institutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Can parents attend counselling sessions?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we strongly encourage parents to attend counselling sessions. We believe family
+                                involvement leads to better decisions, and our counselors are always happy to address
+                                parents' questions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Do you offer counselling in regional languages?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, our counselors can communicate in Hindi and other regional languages to ensure every
+                                student and parent feels comfortable and fully understands the guidance provided.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            How can I contact Dream Careers?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can reach us at +91 9522221191 (Mon–Sat, 9AM–7PM), email us at
+                                help@dreamcareers.co.in, or visit our offices in Bhilai or Noida. You can also fill the
+                                contact form on our website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
 
         <div class="footer-container">
@@ -257,7 +765,7 @@
 
             <!-- Company -->
 
-            <div class="footer-links">
+            <div class="footer-links company-col">
 
                 <h3>Company</h3>
 
@@ -270,7 +778,7 @@
 
             <!-- Services -->
 
-            <div class="footer-links">
+            <div class="footer-links services-col">
 
                 <h3>Services</h3>
 
@@ -283,7 +791,7 @@
 
             <!-- Courses -->
 
-            <div class="footer-links">
+            <div class="footer-links courses-col">
 
                 <h3>Courses</h3>
 
@@ -313,6 +821,52 @@
 
     </footer>
 
+    <script>
+        function toggleFaq(btn) {
+            const item = btn.closest('.faq-item');
+            const answer = item.querySelector('.faq-answer');
+            const isOpen = item.classList.contains('active');
+
+            // Close all open items
+            document.querySelectorAll('.faq-item.active').forEach(openItem => {
+                openItem.classList.remove('active');
+                openItem.querySelector('.faq-answer').classList.remove('open');
+            });
+
+            // If it wasn't open, open it
+            if (!isOpen) {
+                item.classList.add('active');
+                answer.classList.add('open');
+            }
+        }
+    </script>
+
+
+<script>
+    // Hamburger menu toggle
+    var hamburger = document.getElementById("hamburger");
+    var mainNav   = document.getElementById("main-nav");
+    if (hamburger && mainNav) {
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("active");
+            mainNav.classList.toggle("open");
+        });
+        document.querySelectorAll(".dropdown-toggle").forEach(function (toggle) {
+            toggle.addEventListener("click", function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle("dropdown-open");
+                }
+            });
+        });
+        document.addEventListener("click", function (e) {
+            if (!mainNav.contains(e.target) && !hamburger.contains(e.target)) {
+                mainNav.classList.remove("open");
+                hamburger.classList.remove("active");
+            }
+        });
+    }
+</script>
 </body>
 
 </html>

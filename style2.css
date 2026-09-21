@@ -62,12 +62,13 @@
 }
 
 .sdc-body {
+    overflow-x: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
     max-width: 700px;
-    margin-left: 28.5rem;
+    margin-left: 0;
     /* padding:auto; */
     text-align: center;
 
@@ -78,7 +79,7 @@
     border-radius: 16px;
     padding: 20px 24px;
     text-align: center;
-    width: 15rem;
+    width: 100%;
 }
 
 .sdc-body .num {
@@ -140,12 +141,12 @@
 
 .sb-card {
     padding: 50px 25px;
-    margin-left: 17rem;
+    margin-left: 0;
     display: grid;
     justify-content: space-between;
     gap: 50px;
     grid-template-columns: repeat(3, 1fr);
-    width: 65rem;
+    width: 100%;
 }
 
 .sb-con {
@@ -161,7 +162,7 @@
     /* border-radius: 16px; */
     /* padding: 20px 24px;
     text-align: center;
-    width: 15rem;
+    width: 100%;
     margin-right: 20px; */
     width: 100%;
     background: #fff;
@@ -234,7 +235,7 @@
     margin-top: 1.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 7rem;
+    margin-left: 0;
     /* gap: 15px; */
 }
 
@@ -255,7 +256,7 @@
 }
 
 .sb_package-carditem {
-    width: 35rem;
+    width: 100%;
     background: #fff;
     border-radius: 20px;
     padding: 32px;
@@ -263,16 +264,16 @@
     border: 1px solid rgba(23, 92, 221, 0.08);
     margin-bottom: 24px;
     transition: all .3s;
-    height: 22rem;
+    height: auto;
 }
 
 .sb_package-btn {
     background: #0D6EFD;
     color: #FFFFFF;
     padding: 5.625px 11.25px;
-    width: 35rem;
-    height: 2.5rem;
-    margin-left: 29rem;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
 }
 
 .journey {
@@ -301,7 +302,7 @@
     text-decoration: none;
     white-space: nowrap;
     transition: transform .2s, box-shadow .2s;
-    margin-left: 48rem;
+    margin-left: 0;
 }
 
 
@@ -560,4 +561,21 @@
     .journey-content h2 {
         font-size: 1.4rem;
     }
+}
+
+@media (max-width: 430px) {
+    .study-abroad,
+    .sa-container { padding: 36px 12px !important; }
+    .sa-heading { font-size: 22px !important; }
+    .sdc-body,
+    .sb-card,
+    .sb_package-cards,
+    .sb_package-carditem,
+    .journey-box { width: 100% !important; margin-left: 0 !important; }
+    .sdc-body { flex-direction: column !important; gap: 16px !important; }
+    .sb-card { grid-template-columns: 1fr !important; }
+    .sb_package-cards { grid-template-columns: 1fr !important; }
+    .sb_package-carditem { height: auto !important; padding: 18px 14px !important; }
+    .sb_package-btn { width: 100% !important; }
+    .journey-box { padding: 20px 14px !important; flex-direction: column; gap: 14px; }
 }

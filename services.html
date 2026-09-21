@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style1.CSS">
     <!-- for font icon we import this link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -41,7 +42,13 @@
             <img src="logopic.png" alt="Dream Careers">
         </div>
 
-        <nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="main-nav">
             <ul>
 
                 <li><a href="index.html">Home</a></li>
@@ -49,7 +56,7 @@
                 <li><a href="services.html" class="active">Services</a></li>
 
                 <li class="dropdown">
-                    <a href="#">
+                    <a href="#" class="dropdown-toggle">
                         Counseling
                         <i class="fa-solid fa-chevron-down"></i>
                     </a>
@@ -61,7 +68,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#">
+                    <a href="#" class="dropdown-toggle">
                         Programs
                         <i class="fa-solid fa-chevron-down"></i>
                     </a>
@@ -116,115 +123,935 @@
 
     </section>
 
+    <!-- ===== SERVICE INFORMATION SECTION ===== -->
     <section class="service-information">
-
         <div class="i-container">
 
+            <!-- LEFT PANEL -->
             <div class="left">
+                <span class="tag">STRATEGIC CONSULTING</span>
+                <h2>Paid Admission Counselling</h2>
+                <p>End to end support from career confusion to final seat confirmation.</p>
 
-                <span class="tag">Strategic Consulting</span>
-
-                <h2>Paid Admission Counseling</h2>
-
-                <p>
-                    End-to-end support from career confusion to final seat confirmation.
-                </p>
-
+                <!-- Feature grid – 2 columns -->
                 <div class="grid">
- <!-- bootstap  -->
-
                     <div class="column">
-                        <div>☑️ College/University Selection Assistance</div>
-
-                        <div>☑️ Rank & Budget Based College Shortlisting</div>
-
-                        <div>☑️ Campus Visit & Travelling Support</div>
-
-                        <div>☑️ Admission Follow-up and Confirmation Assistance</div>
-
-                        <div>☑️ Reporting & Joining Assistance</div>
-
-                        <div>☑️ Complete Admission Support</div>
+                        <div><i class="fa-solid fa-circle-check"
+                                style="color:#2563eb;margin-right:8px;"></i>College/University Selection Assistance
+                        </div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Rank &amp;
+                            Budget Based College Shortlisting</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Campus
+                            Visit &amp; Travelling Support</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Admission
+                            Follow-up and Confirmation Assistance</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Reporting
+                            &amp; Joining Assistance</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Complete
+                            Admission Support</div>
                     </div>
-
-
-
                     <div class="column">
-                        <div>☑️ Choice Filling & Allotment Updates</div>
-
-                        <div>☑️ Multi-Round Choice Filling Strategy </div>
-
-                        <div>☑️ Form Filling and Documentation Assistance </div>
-
-                        <div>☑️ Bond and Bank Guarantee Guidance </div>
-
-                        <div>☑️ NRI Sponsor Documentation Guidance </div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Choice
+                            Filling &amp; Allotment Updates</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Multi Round
+                            Choice Filling Strategy</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Form
+                            Filling and Documentation Assistance</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Bond and
+                            Bank Guarantee Guidance</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>NRI Sponsor
+                            Documentation Guidance</div>
                     </div>
-
-
                 </div>
 
-
+                <!-- Benefits box -->
                 <div class="benifit">
-                    <h4>Benifits</h4>
+                    <h4>Benefits:</h4>
                     <div class="benifit-item">
-                        <div>☑️ Education Loan Assistance</div>
-                        <div>☑️ Financial Planning & Fee Transparency</div>
-                        <div>☑️ Hostel & Internship Stipend Guidance</div>
-
-
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Education
+                            Loan Assistance</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Financial
+                            Planning &amp; Fee Transparency</div>
+                        <div><i class="fa-solid fa-circle-check" style="color:#2563eb;margin-right:8px;"></i>Hostel
+                            &amp; Internship Stipend Guidance</div>
                     </div>
                 </div>
-                <div class="alert alert-warning" role="alert">
 
-                    100% Admission Support - Complete guidance from application to final seat confirmation.
+                <!-- Alert banner -->
+                <div class="alert alert-warning">
+                    <i class="fa-solid fa-circle-info" style="color:#16a34a;margin-right:10px;"></i>
+                    <strong>100% Admission Support</strong> – Complete guidance from application to final seat
+                    confirmation
                 </div>
-
             </div>
 
-
-
-            <div class="b_container">
-                <div class="right">
-
-                    <div class="box">
-
-                        <h1>18,000+</h1>
-
-                        <p>Students Counselled</p>
-
-                    </div>
-
-                    <div class="box">
-
-                        <h1>98%</h1>
-
-                        <p>Success Rate</p>
-
-                    </div>
-
-                    <div class="box">
-
-                        <h1>8+</h1>
-
-                        <p>Years Experience</p>
-
-                    </div>
-
-                    <div class="box">
-
-                        <h1>50+</h1>
-
-                        <p>Expert Counsellors</p>
-
-                    </div>
-
+            <!-- RIGHT PANEL – Stats Card -->
+            <div class="right">
+                <div class="box">
+                    <h1>18,000+</h1>
+                    <p>Students Counselled</p>
+                </div>
+                <div class="box">
+                    <h1>98%</h1>
+                    <p>Satisfaction Rate</p>
+                </div>
+                <div class="box">
+                    <h1>8+</h1>
+                    <p>Years Experience</p>
+                </div>
+                <div class="box">
+                    <h1>50+</h1>
+                    <p>Career Experts</p>
                 </div>
             </div>
 
         </div>
-
     </section>
+    <!-- ===== END SERVICE INFORMATION SECTION ===== -->
+
+    <!-- ===== PROGRAM-WISE ADMISSION SUPPORT SECTION ===== -->
+    <section class="pac-section">
+        <div class="pac-container">
+            <div class="pac-header">
+                <span class="pac-badge">PAID ADMISSION COUNSELLING</span>
+                <h2 class="pac-title">Program-wise Admission Support</h2>
+                <p class="pac-para">100% Admission Support with complete guidance, transparency, and expert career
+                    Counselling.</p>
+            </div>
+
+            <div class="pac-grid">
+
+                <!-- NEET UG -->
+                <div class="pac-card">
+                    <div class="pac-card-header pac-bg-blue">
+                        <h3>NEET UG Program</h3>
+                        <p>Across India (Merit, Paid, NRI, Management)</p>
+                    </div>
+                    <div class="pac-card-body">
+                        <div class="pac-tags">
+                            <span>MBBS</span><span>BAMS</span><span>BDS</span><span>BHMS</span><span>BNYS</span>
+                            <span>BUMS</span><span>BSMS</span><span>BPT</span><span>BVSc &amp; AH</span><span>B.Sc
+                                Nursing</span>
+                        </div>
+                        <p class="pac-inc-label">Services Included:</p>
+                        <ul class="pac-list">
+                            <li>College/University Selection Assistance</li>
+                            <li>Choice Filling &amp; Allotment Updates</li>
+                            <li>Rank &amp; Budget Based College Shortlisting</li>
+                            <li>Multi-Round Choice Filling Strategy</li>
+                            <li>Campus Visit &amp; Travelling Support</li>
+                            <li>Form Filling &amp; Documentation Assistance</li>
+                            <li>Admission Follow-up &amp; Confirmation</li>
+                            <li>Bond &amp; Bank Guarantee Guidance</li>
+                            <li>Reporting &amp; Joining Assistance</li>
+                            <li>NRI Sponsor Documentation Guidance</li>
+                            <li>Complete Admission Support</li>
+                        </ul>
+                        <div class="pac-fees">
+                            <div class="pac-fee-row"><span>Chhattisgarh</span><span>Rs. 25,000</span></div>
+                            <div class="pac-fee-row"><span>Across India</span><span>Rs. 50,000</span></div>
+                            <div class="pac-fee-row"><span>NRI Admission</span><span>Rs. 1,00,000</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEET PG -->
+                <div class="pac-card">
+                    <div class="pac-card-header pac-bg-purple">
+                        <h3>NEET PG Program</h3>
+                        <p>Across India (Merit, Paid, NRI, Management)</p>
+                    </div>
+                    <div class="pac-card-body">
+                        <p class="pac-inc-label">Services Included:</p>
+                        <ul class="pac-list">
+                            <li>College/University Selection Assistance</li>
+                            <li>NFPG, NBE, NMC, MCC &amp; State Updates</li>
+                            <li>DNB, MPH, NHA &amp; NBEMS Diploma Guidance</li>
+                            <li>MD/MS Branch Selection Assistance</li>
+                            <li>Bond &amp; Bank Guarantee Guidance</li>
+                            <li>Choice Filling &amp; Allotment Updates</li>
+                            <li>Rank &amp; Budget Based College Shortlisting</li>
+                            <li>Multi-Round Choice Filling Strategy</li>
+                            <li>Campus Visit &amp; Travelling Support</li>
+                            <li>Form Filling &amp; Documentation</li>
+                            <li>Admission Follow-up &amp; Confirmation</li>
+                            <li>Reporting &amp; Joining Assistance</li>
+                            <li>NRI Sponsor Documentation</li>
+                            <li>Complete Admission Support</li>
+                        </ul>
+                        <div class="pac-fees">
+                            <div class="pac-fee-row"><span>Chhattisgarh</span><span>Rs. 50,000</span></div>
+                            <div class="pac-fee-row"><span>Across India</span><span>Rs. 1,00,000</span></div>
+                            <div class="pac-fee-row"><span>NRI Admission</span><span>Rs. 1,50,000</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MBBS -->
+                <div class="pac-card">
+                    <div class="pac-card-header pac-bg-indigo">
+                        <h3>MBBS Program</h3>
+                        <p>Across India (Merit, Paid, NRI, Management)</p>
+                    </div>
+                    <div class="pac-card-body">
+                        <p class="pac-inc-label">Services Included:</p>
+                        <ul class="pac-list">
+                            <li>Choice Filling &amp; Allotment Updates</li>
+                            <li>Rank &amp; Budget Based College Shortlisting</li>
+                            <li>Multi-Round Choice Filling Strategy</li>
+                            <li>Bond and Bank Guarantee Guidance</li>
+                            <li>NRI Sponsor Documentation Guidance</li>
+                            <li>Form Filling &amp; Documentation Assistance</li>
+                            <li>Admission Follow up &amp; Confirmation</li>
+                            <li>Reporting &amp; Joining Assistance</li>
+                            <li>Complete Admission Support</li>
+                        </ul>
+                        <div class="pac-fees">
+                            <div class="pac-fee-row"><span>Chhattisgarh</span><span>Rs. 50,000</span></div>
+                            <div class="pac-fee-row"><span>Across India</span><span>Rs. 75,000</span></div>
+                            <div class="pac-fee-row"><span>NRI Admission</span><span>Rs. 1,25,000</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BDS -->
+                <div class="pac-card">
+                    <div class="pac-card-header pac-bg-teal">
+                        <h3>BDS Program</h3>
+                        <p>Across India (Merit, Paid, NRI, Management)</p>
+                    </div>
+                    <div class="pac-card-body">
+                        <p class="pac-inc-label">Services Included:</p>
+                        <ul class="pac-list">
+                            <li>College/University Selection Assistance</li>
+                            <li>Choice Filling &amp; Allotment Updates</li>
+                            <li>Rank &amp; Budget Based College Shortlisting</li>
+                            <li>Multi-Round Choice Filling Strategy</li>
+                            <li>Campus Visit &amp; Travelling Support</li>
+                            <li>Form Filling &amp; Documentation</li>
+                            <li>Admission Follow-up &amp; Confirmation</li>
+                            <li>Reporting &amp; Joining Assistance</li>
+                            <li>Complete Admission Support</li>
+                        </ul>
+                        <div class="pac-fees">
+                            <div class="pac-fee-row"><span>Chhattisgarh</span><span>Rs. 25,000</span></div>
+                            <div class="pac-fee-row"><span>Across India</span><span>Rs. 50,000</span></div>
+                            <div class="pac-fee-row"><span>Abroad</span><span>Rs. 1,50,000</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MDS -->
+                <div class="pac-card">
+                    <div class="pac-card-header pac-bg-cyan">
+                        <h3>MDS Program</h3>
+                        <p>Across India (Merit, Paid, NRI, Management)</p>
+                    </div>
+                    <div class="pac-card-body">
+                        <p class="pac-inc-label">Services Included:</p>
+                        <ul class="pac-list">
+                            <li>Clinical &amp; Non Clinical Branch Selection</li>
+                            <li>Choice Filling &amp; Allotment Updates</li>
+                            <li>Rank &amp; Budget Based College Shortlisting</li>
+                            <li>Multi Round Choice Filling Strategy</li>
+                            <li>Form Filling &amp; Documentation</li>
+                            <li>Admission Follow-up &amp; Confirmation</li>
+                            <li>Reporting &amp; Joining Assistance</li>
+                            <li>Passport &amp; Visa Support (Abroad)</li>
+                            <li>Complete Admission Support</li>
+                        </ul>
+                        <div class="pac-fees">
+                            <div class="pac-fee-row"><span>Chhattisgarh</span><span>Rs. 50,000</span></div>
+                            <div class="pac-fee-row"><span>Across India</span><span>Rs. 1,00,000</span></div>
+                            <div class="pac-fee-row"><span>Abroad</span><span>Rs. 1,50,000</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAMS -->
+                <div class="pac-card">
+                    <div class="pac-card-header pac-bg-green">
+                        <h3>BAMS Program</h3>
+                        <p>Across India (Merit, Paid &amp; Quota Seats)</p>
+                    </div>
+                    <div class="pac-card-body">
+                        <p class="pac-inc-label">Services Included:</p>
+                        <ul class="pac-list">
+                            <li>College/University Selection Assistance</li>
+                            <li>Choice Filling &amp; Allotment Updates</li>
+                            <li>Rank &amp; Budget Based College Shortlisting</li>
+                            <li>Multi-Round Choice Filling Strategy</li>
+                            <li>Campus Visit &amp; Travelling Support</li>
+                            <li>Form Filling &amp; Documentation</li>
+                            <li>Admission Follow-up &amp; Confirmation</li>
+                            <li>Reporting &amp; Joining Assistance</li>
+                            <li>Complete Admission Support</li>
+                        </ul>
+                        <div class="pac-fees">
+                            <div class="pac-fee-row"><span>Chhattisgarh</span><span>Rs. 25,000</span></div>
+                            <div class="pac-fee-row"><span>Across India</span><span>Rs. 50,000</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="abroad-mbbs-section pac-card-wide">
+
+                    <!-- LEFT -->
+                    <div class="mbbs-left">
+
+                        <h2>Abroad MBBS Admission</h2>
+
+                        <p>
+                            Best Private and Govt. Medical Colleges Abroad
+                            (NMC &amp; WHO Recognised Universities).
+                        </p>
+
+                        <div class="country-list">
+                            <span>Russia</span>
+                            <span>Kyrgyzstan</span>
+                            <span>Georgia</span>
+                            <span>Kazakhstan</span>
+                            <span>Uzbekistan</span>
+                            <span>Poland</span>
+                            <span>UK</span>
+                            <span>USA</span>
+                            <span>Germany</span>
+                            <span>Philippines</span>
+                            <span>China</span>
+                            <span>Nepal</span>
+                            <span>Bangladesh</span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT -->
+                    <div class="mbbs-right">
+
+                        <div class="services">
+
+                            <h3>Services &amp; Facilities:</h3>
+
+                            <ul>
+                                <li>College/University Selection Assistance</li>
+                                <li>Direct Admission Assistance (No Donation)</li>
+                                <li>Form Filling and Documentation Assistance</li>
+                                <li>Passport &amp; Visa Assistance</li>
+                                <li>Admission Follow-up &amp; Confirmation</li>
+                                <li>Reporting &amp; Joining Assistance</li>
+                                <li>Campus Visit &amp; Travel Support</li>
+                                <li>Indian Food &amp; Hostel Facility</li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="counselling-fee">
+
+                            <h3>Counselling Fees:</h3>
+
+                            <div class="fee-box">
+                                <span>ABROAD ADMISSION</span>
+                                <strong>Rs. 1,50,000</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="program-section">
+
+                    <div class="program-container">
+
+                        <!-- B.Sc Nursing -->
+                        <div class="program-card nursing-card">
+
+                            <div class="program-header">
+                                <h2>B.Sc Nursing Program</h2>
+                                <p>In Chhattisgarh</p>
+                            </div>
+
+                            <div class="program-content">
+
+                                <div class="tags">
+                                    <span>Hospitals (Govt/Private)</span>
+                                    <span>Educational Institutions</span>
+                                    <span>Clinics & Health Centers</span>
+                                    <span>Primary Health Centers</span>
+                                    <span>Industrial/NGO Nurse</span>
+                                </div>
+
+                                <h3>Services Included:</h3>
+
+                                <ul class="services">
+                                    <li>Career Counselling Guidance</li>
+                                    <li>College/University Selection Assistance</li>
+                                    <li>Campus Visit & Travelling Support</li>
+                                    <li>Form Filling & Documentation Assistance</li>
+                                    <li>Admission Follow-up & Confirmation</li>
+                                    <li>Round-wise Counselling Process</li>
+                                    <li>Complete Admission Support</li>
+                                </ul>
+
+                                <div class="fees-box">
+                                    <div>
+                                        <p>COUNSELLING FEES</p>
+                                        <strong>Rs. 5,000</strong>
+                                    </div>
+
+                                    <button>Enroll Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- B Pharmacy -->
+                        <div class="program-card pharmacy-card">
+
+                            <div class="program-header">
+                                <h2>B Pharmacy Program</h2>
+                                <p>In Chhattisgarh</p>
+                            </div>
+
+                            <div class="program-content">
+
+                                <div class="tags">
+                                    <span>Hospital & Clinical</span>
+                                    <span>Pharmaceutical Industry</span>
+                                    <span>Sales & Marketing</span>
+                                    <span>Government Job</span>
+                                    <span>Higher Studies</span>
+                                </div>
+
+                                <h3>Services Included:</h3>
+
+                                <ul class="services">
+                                    <li>Career Counselling Guidance</li>
+                                    <li>College/University Selection Assistance</li>
+                                    <li>Campus Visit & Travelling Support</li>
+                                    <li>Form Filling & Documentation Assistance</li>
+                                    <li>Admission Follow-up & Confirmation</li>
+                                    <li>Round-wise Counselling Process</li>
+                                    <li>Complete Admission Support</li>
+                                </ul>
+
+                                <div class="fees-box">
+                                    <div>
+                                        <p>COUNSELLING FEES</p>
+                                        <strong>Rs. 5,000</strong>
+                                    </div>
+
+                                    <button>Enroll Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Engineering Program — 3-column card -->
+                <div class="eng-card-wrap pac-card-wide">
+                    <!-- LEFT: purple panel -->
+                    <div class="eng-left">
+                        <h2>Engineering Program</h2>
+                        <p>Across India &amp; Abroad. Complete Admission Assistance for
+                            Government Colleges, Private Colleges, and Deemed Universities.</p>
+                        <div class="eng-tags">
+                            <span>Computer Science</span>
+                            <span>Artificial Intelligence</span>
+                            <span>Data Science</span>
+                            <span>IT</span>
+                            <span>Cyber Security</span>
+                            <span>Civil</span>
+                            <span>Electrical</span>
+                            <span>Mechanical</span>
+                        </div>
+                    </div>
+
+                    <!-- MIDDLE: services list -->
+                    <div class="eng-middle">
+                        <h3>Services Included:</h3>
+                        <ul class="eng-services">
+                            <li>Career Counselling Guidance</li>
+                            <li>College/University Selection</li>
+                            <li>Campus Visit &amp; Travel Support</li>
+                            <li>Form Filling &amp; Documentation</li>
+                            <li>Admission Follow-up</li>
+                            <li>JOSAA/CSAB &amp; DASA Counselling</li>
+                            <li>IIT, NIT, IIIT &amp; GFTI Guidance</li>
+                            <li>Passport &amp; Visa Support (Abroad)</li>
+                        </ul>
+                    </div>
+
+                    <!-- RIGHT: fee boxes -->
+                    <div class="eng-right">
+                        <h3>Counselling Fees:</h3>
+                        <div class="eng-fees">
+                            <div class="eng-fee-row">
+                                <span>Chhattisgarh</span>
+                                <strong>Rs. 5,000</strong>
+                            </div>
+                            <div class="eng-fee-row">
+                                <span>Across India</span>
+                                <strong>Rs. 25,000</strong>
+                            </div>
+                            <div class="eng-fee-row">
+                                <span>Abroad</span>
+                                <strong>Rs. 1,00,000</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Law & Management -->
+                <div class="pac-card">
+                    <div class="pac-card-header pac-bg-teal">
+                        <h3>Law &amp; Management</h3>
+                        <p>Across India &amp; Abroad</p>
+                    </div>
+                    <div class="pac-card-body">
+                        <p class="pac-inc-label">Services Included:</p>
+                        <ul class="pac-list">
+                            <li>Career Counselling Guidance</li>
+                            <li>College/University Selection</li>
+                            <li>Campus Visit &amp; Travelling Support</li>
+                            <li>Form Filling &amp; Documentation</li>
+                            <li>Admission Follow-up &amp; Confirmation</li>
+                            <li>Counselling Process Guidance</li>
+                            <li>Passport &amp; Visa Support (Abroad)</li>
+                        </ul>
+                        <div class="pac-fees">
+                            <div class="pac-fee-row"><span>Chhattisgarh</span><span>Rs. 10,000</span></div>
+                            <div class="pac-fee-row"><span>Across India</span><span>Rs. 25,000</span></div>
+                            <div class="pac-fee-row"><span>Abroad</span><span>Rs. 1,00,000</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Graduation -->
+                <div class="pac-card">
+                    <div class="pac-card-header pac-bg-purple">
+                        <h3>Post Graduation Program</h3>
+                        <p>Across India &amp; Abroad</p>
+                    </div>
+                    <div class="pac-card-body">
+                        <div class="pac-tags">
+                            <span>MBA</span><span>M.Tech</span><span>M.Arch</span><span>MCA</span><span>M.Sc</span>
+                            <span>M.Com</span><span>MA</span><span>LLM</span><span>PGDM</span>
+                        </div>
+                        <p class="pac-inc-label">Services Included:</p>
+                        <ul class="pac-list">
+                            <li>Career Counselling Guidance</li>
+                            <li>College/University Selection</li>
+                            <li>Campus Visit &amp; Travelling Support</li>
+                            <li>Form Filling &amp; Documentation</li>
+                            <li>Admission Follow-up &amp; Confirmation</li>
+                            <li>Counselling Process Guidance</li>
+                            <li>Complete Admission Support</li>
+                        </ul>
+                        <div class="pac-fees">
+                            <div class="pac-fee-row"><span>Chhattisgarh</span><span>Rs. 10,000</span></div>
+                            <div class="pac-fee-row"><span>Across India</span><span>Rs. 25,000</span></div>
+                            <div class="pac-fee-row"><span>Abroad</span><span>Rs. 1,00,000</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </section>
+    <!-- ===== END PROGRAM-WISE ADMISSION SUPPORT SECTION ===== -->
+
+    <!-- ===== WEBINAR SECTION ===== -->
+    <section class="webinar-section">
+        <div class="webinar-container">
+            <div class="webinar-banner">
+
+                <div class="webinar-left">
+                    <div class="webinar-icon">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div class="webinar-text">
+                        <h3>Join Our Webinar</h3>
+                        <p>Get expert guidance from our counsellors and clear your admission related doubts.</p>
+                        <div class="webinar-badges">
+                            <span><i class="fa-regular fa-circle-play"></i> Live Session</span>
+                            <span><i class="fa-solid fa-user-graduate"></i> Expert Guidance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="free counseling.html" class="webinar-btn">Register Now &rarr;</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- ===== END WEBINAR SECTION ===== -->
+
+    <!-- ===== PREDICTOR SECTION ===== -->
+    <section class="predictor">
+        <div class="predictor-container">
+            <div class="predictor-left">
+                <div class="predictor-badge">
+                    <ul style="margin-left: 1rem;">
+                        <li>SMART • FAST • ACCURATE</li>
+                    </ul>
+                </div>
+
+                <h1>
+                    MBBS College
+                    <br>
+                    <span class="gradient-text">Predictor</span>
+                </h1>
+                <p class="predictor-para">
+                    Confused about which college you can get with your NEET score?
+                    Our smart predictor analyzes your
+                    rank, category, and quota to show the best-fit medical colleges across India — in seconds.
+                </p>
+                <div class="predictor-features">
+                    <div class="predi-feature">
+                        <div class="predi_feature-icon" style="background: rgba(168, 85, 247, 0.2); color: #818cf8;">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="predi-info">
+                            <h3>Rank-Based Prediction</h3>
+                            <p>Colleges matched to your exact NEET rank &amp; score</p>
+                        </div>
+                    </div>
+
+                    <div class="predi-feature">
+                        <div class="predi_feature-icon" style="background: rgba(34, 197, 94, 0.2);">
+                            <i class="fa-solid fa-location-dot" style="color: #34d399"></i>
+                        </div>
+                        <div class="predi-info">
+                            <h3>State &amp; Category Filter</h3>
+                            <p>Results tailored by state quota, category &amp; domicile</p>
+                        </div>
+                    </div>
+
+                    <div class="predi-feature">
+                        <div class="predi_feature-icon" style="background: rgba(249, 115, 22, 0.2);">
+                            <i class="bi bi-bar-chart-fill" style="color: #f97316;"></i>
+                        </div>
+                        <div class="predi-info">
+                            <h3>Cutoff Comparison</h3>
+                            <p>Historical cutoff data across all counseling rounds</p>
+                        </div>
+                    </div>
+
+                    <div class="predi-feature">
+                        <div class="predi_feature-icon" style="background: rgba(59, 130, 246, 0.2);">
+                            <i class="bi bi-lightning-charge-fill" style="color: #38bdf8"></i>
+                        </div>
+                        <div class="predi-info">
+                            <h3>Instant Results</h3>
+                            <p>No registration needed — get predictions instantly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-wrapper">
+                    <button class="cta" onclick="scrollToPredictor()">
+                        <span>🚀 &nbsp; Predict My MBBS Colleges</span>
+                        <span class="arrow">→</span>
+                    </button>
+                    <div class="hand-note">
+                        Start Your<br>
+                        Prediction Now!
+                    </div>
+                </div>
+
+                <div class="trust">
+                    <span><i class="bi bi-shield-check" style="color: #34d399;font-size: 14px;"></i> 100% Free</span>
+                    <span><i class="bi bi-person-fill-check" style="color: #38bdf8;font-size: 14px;"></i> No Login Required</span>
+                    <span><i class="bi bi-star-fill" style="color: #fbbf24;font-size: 13px;"></i> Trusted by Students</span>
+                </div>
+            </div>
+
+            <div class="predictor-right" id="predictor">
+                <div class="predi_right-header">
+                    <div class="predictor-icon">🎓</div>
+                    <div>
+                        <h2>MBBS College Predictor</h2>
+                        <p>NEET 2025 Data</p>
+                    </div>
+                </div>
+
+                <div class="score-box">
+                    <div class="score-label">NEET Score</div>
+                    <div class="score">520 <span>/ 720</span></div>
+                    <div class="progress">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                </div>
+
+                <div class="select-row">
+                    <div class="select-box">
+                        <label>Category</label>
+                        <select id="category">
+                            <option>General</option>
+                            <option>OBC</option>
+                            <option>SC</option>
+                            <option>ST</option>
+                            <option>EWS</option>
+                        </select>
+                    </div>
+                    <div class="select-box">
+                        <label>Quota</label>
+                        <select id="quota">
+                            <option>All India</option>
+                            <option>State Quota</option>
+                            <option>Management</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="predi-result">
+                    <h3>TOP PREDICTED COLLEGES</h3>
+                    <div class="predi-college">
+                        <div class="predi_college-name">
+                            <span class="dot"></span>
+                            Govt. Medical College, Raipur
+                        </div>
+                        <span class="state">CG</span>
+                    </div>
+                    <div class="predi-college">
+                        <div class="predi_college-name">
+                            <span class="dot"></span>
+                            AIIMS Bhopal
+                        </div>
+                        <span class="state">MP</span>
+                    </div>
+                    <div class="predi-college">
+                        <div class="predi_college-name">
+                            <span class="dot" style="background:#ff9d21"></span>
+                            Pt. JNM Medical College, Raipur
+                        </div>
+                        <span class="state">CG</span>
+                    </div>
+                    <div style="text-align:center;margin-top:16px;color:#6daeff;font-size:13px;">
+                        +47 more colleges matched
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== END PREDICTOR SECTION ===== -->
+
+    <!-- ===== ADMISSION PROCESS SECTION ===== -->
+    <section class="adm-process-section">
+        <div class="adm-process-container">
+
+            <div class="adm-process-header">
+                <span class="adm-process-badge">HOW IT WORKS</span>
+                <h2 class="adm-process-title">Our Admission Support Process</h2>
+            </div>
+
+            <div class="adm-process-grid">
+
+                <div class="adm-process-card">
+                    <div class="adm-step-num">01</div>
+                    <div class="adm-step-body">
+                        <h4>Career Assessment</h4>
+                        <p>We understand your strengths, interests, and goals through a detailed one-on-one Counselling session.</p>
+                    </div>
+                </div>
+
+                <div class="adm-process-card">
+                    <div class="adm-step-num">02</div>
+                    <div class="adm-step-body">
+                        <h4>Course &amp; College Shortlisting</h4>
+                        <p>Based on your profile, we shortlist the best fit courses and colleges in India or abroad.</p>
+                    </div>
+                </div>
+
+                <div class="adm-process-card">
+                    <div class="adm-step-num">03</div>
+                    <div class="adm-step-body">
+                        <h4>Form Filling &amp; Documentation</h4>
+                        <p>We assist with application forms, SOPs, LORs, and document organization.</p>
+                    </div>
+                </div>
+
+                <div class="adm-process-card">
+                    <div class="adm-step-num">04</div>
+                    <div class="adm-step-body">
+                        <h4>Counselling Registration</h4>
+                        <p>We register you for NEET, JEE, CAT, CLAT, or state-level Counselling processes.</p>
+                    </div>
+                </div>
+
+                <div class="adm-process-card">
+                    <div class="adm-step-num">05</div>
+                    <div class="adm-step-body">
+                        <h4>Choice Filling &amp; Locking</h4>
+                        <p>Expert guidance on choice filling and locking to maximize your chances of the best seat.</p>
+                    </div>
+                </div>
+
+                <div class="adm-process-card">
+                    <div class="adm-step-num">06</div>
+                    <div class="adm-step-body">
+                        <h4>Admission Confirmation</h4>
+                        <p>We follow up until your admission is confirmed and you are settled in your new institution.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ===== END ADMISSION PROCESS SECTION ===== -->
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="svc-faq-section">
+        <div class="svc-faq-container">
+
+            <div class="svc-faq-header">
+                <span class="svc-faq-badge">FREQUENTLY ASKED QUESTIONS</span>
+                <h2 class="svc-faq-title">Got Questions? We Have Answers</h2>
+                <p class="svc-faq-subtitle">Everything you need to know about our Counselling services and admission process</p>
+            </div>
+
+            <div class="svc-faq-grid">
+
+                <!-- Column 1 -->
+                <div class="svc-faq-col">
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            What is the difference between free and paid Counselling?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>Free Counselling offers basic career guidance and program information. Paid Counselling includes end-to-end admission support — from college shortlisting to seat confirmation, documentation, and follow-up.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            When should I register for paid Counselling?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>Ideally register as soon as your results are declared — NEET, JEE, or 12th board. Early registration ensures timely guidance before counselling rounds begin and seats fill up.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            Do you help with both government and private college admissions?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>Yes. We assist with government colleges (state/central quota), private colleges, deemed universities, and management quota admissions across all major programs.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            Can I get MBBS admission with a low NEET score?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>Yes, options exist even with lower scores — management quota, NRI quota, private colleges, and abroad MBBS in countries like Russia, Georgia, Kazakhstan, and Philippines.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            What documents are required for NEET Counselling?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>Documents typically include NEET scorecard, 10th &amp; 12th marksheets, transfer certificate, caste/category certificate (if applicable), ID proof, passport photos, and medical fitness certificate.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Column 2 -->
+                <div class="svc-faq-col">
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            How does the engineering Counselling process work?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>We guide you through JEE/state CET registration, college shortlisting based on rank and branch preference, choice filling strategy, locking, and final seat confirmation.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            Is study abroad MBBS a good option?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>Yes. Abroad MBBS from NMC &amp; WHO recognised universities is cost-effective, has no donation, and provides international exposure. We assist with admission, visa, and travel for 13+ countries.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            Do you provide education loan assistance?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>Yes. We help you understand education loan options, connect you with banks, and guide you through the documentation required to secure financing for your studies.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            What is the Counselling fee for nursing and pharmacy?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>The Counselling fee for B.Sc Nursing and B Pharmacy programs in Chhattisgarh is Rs. 5,000. This covers complete admission support from registration to final seat confirmation.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item">
+                        <button class="svc-faq-q" onclick="svcToggleFaq(this)">
+                            How do I get started with Dream Careers?
+                            <span class="svc-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="svc-faq-a">
+                            <p>Simply call us at +91 95222 21191, visit our office in Bhilai, or book a free Counselling session on our website. Our expert team will guide you from the very first step.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ===== END FAQ SECTION ===== -->
+
+    <!-- ===== CTA BANNER SECTION ===== -->
+    <section class="svc-cta-section">
+        <div class="svc-cta-container">
+            <div class="svc-cta-banner">
+                <div class="svc-cta-text">
+                    <h3>Ready to Get Expert Guidance?</h3>
+                    <p>Free Counselling with our expert counselors — Mon to Sat, 9AM to 7PM.</p>
+                </div>
+                <a href="free counseling.html" class="svc-cta-btn">Free Counselling &rarr;</a>
+            </div>
+        </div>
+    </section>
+    <!-- ===== END CTA BANNER SECTION ===== -->
 
     <footer class="footer">
 
@@ -283,7 +1110,7 @@
 
             <!-- Company -->
 
-            <div class="footer-links">
+            <div class="footer-links company-col">
 
                 <h3>Company</h3>
 
@@ -296,7 +1123,7 @@
 
             <!-- Services -->
 
-            <div class="footer-links">
+            <div class="footer-links services-col">
 
                 <h3>Services</h3>
 
@@ -309,7 +1136,7 @@
 
             <!-- Courses -->
 
-            <div class="footer-links">
+            <div class="footer-links courses-col">
 
                 <h3>Courses</h3>
 
@@ -339,6 +1166,56 @@
 
     </footer>
 
+
+    <script>
+        function scrollToPredictor() {
+            var el = document.getElementById('predictor');
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function svcToggleFaq(btn) {
+            var item = btn.parentElement;
+            var answer = item.querySelector('.svc-faq-a');
+            var isOpen = item.classList.contains('open');
+            // close all
+            document.querySelectorAll('.svc-faq-item.open').forEach(function(i) {
+                i.classList.remove('open');
+                i.querySelector('.svc-faq-a').style.maxHeight = null;
+                i.querySelector('.svc-faq-icon i').style.transform = 'rotate(0deg)';
+            });
+            if (!isOpen) {
+                item.classList.add('open');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                btn.querySelector('.svc-faq-icon i').style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+
+    <script>
+        // Hamburger menu toggle
+        var hamburger = document.getElementById("hamburger");
+        var mainNav = document.getElementById("main-nav");
+        if (hamburger && mainNav) {
+            hamburger.addEventListener("click", function () {
+                hamburger.classList.toggle("active");
+                mainNav.classList.toggle("open");
+            });
+            document.querySelectorAll(".dropdown-toggle").forEach(function (toggle) {
+                toggle.addEventListener("click", function (e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        this.parentElement.classList.toggle("dropdown-open");
+                    }
+                });
+            });
+            document.addEventListener("click", function (e) {
+                if (!mainNav.contains(e.target) && !hamburger.contains(e.target)) {
+                    mainNav.classList.remove("open");
+                    hamburger.classList.remove("active");
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

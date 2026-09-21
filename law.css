@@ -1,15 +1,16 @@
+html, body { overflow-x: hidden; max-width: 100%; }
 .law-counseling {
     background: #112344;
     padding: 80px 0;
 }
 
-.law-container{
+.law-container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
-.law-content{
+.law-content {
     text-align: center;
 
 
@@ -43,7 +44,7 @@
     margin-bottom: 20px;
 }
 
-.law-breadcrumb{
+.law-breadcrumb {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,4 +93,171 @@
     .law-para {
         font-size: 14px;
     }
+}
+
+
+/* =====================================================
+   LAW PROGRAMS SECTION
+   ===================================================== */
+.law-programs-section {
+    background: #f8fafc;
+    padding: 70px 0;
+}
+
+.law-programs-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.law-programs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 45px;
+}
+
+/* Base card */
+.law-prog-card {
+    border-radius: 20px;
+    padding: 36px 32px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Purple card (Law) */
+.law-prog-card--purple {
+    background: #7c3aed;
+}
+
+/* Orange card (Management) */
+.law-prog-card--orange {
+    background: #f59e0b;
+}
+
+/* Header row: icon + title block */
+.law-prog-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.law-prog-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.law-prog-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 4px 0;
+    color: #ffffff;
+}
+
+.law-prog-courses {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    opacity: 0.85;
+    color: #ffffff;
+}
+
+.law-prog-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+/* Feature list */
+.law-prog-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.law-prog-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.95;
+}
+
+.law-prog-list li i {
+    font-size: 16px;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* CTA button */
+.law-programs-cta {
+    text-align: center;
+}
+
+.law-programs-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #1a73e8;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.law-programs-btn:hover {
+    background: #1558b0;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   LAW PROGRAMS RESPONSIVE
+   ===================================================== */
+@media (max-width: 768px) {
+    .law-programs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .law-prog-card {
+        padding: 28px 20px;
+    }
+
+    .law-prog-title {
+        font-size: 20px;
+    }
+
+    .law-programs-btn {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 430px) {
+    .law-counseling { padding: 36px 0 !important; }
+    .law-title { font-size: 22px !important; }
+    .law-para { font-size: 13px !important; }
+    .law-container,
+    .law-programs-container { padding: 0 12px !important; max-width: 100% !important; }
+    .law-programs-grid { grid-template-columns: 1fr !important; }
+    .law-prog-card { padding: 20px 14px !important; }
 }

@@ -1,3 +1,4 @@
+html, body { overflow-x: hidden; max-width: 100%; }
 .pharmacy-counseling {
     background: #112344;
     padding: 80px 0;
@@ -9,7 +10,7 @@
     margin: auto;
 }
 
-.pharmacy-content{
+.pharmacy-content {
     text-align: center;
 
 
@@ -43,7 +44,7 @@
     margin-bottom: 20px;
 }
 
-.pharmacy_counseling-breadcrumb{
+.pharmacy_counseling-breadcrumb {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +57,965 @@
 
 .pharmacy_counseling-breadcrumb span {
     color: white;
+}
+
+
+/* =====================================================
+   PHARMACY STATS SECTION
+   ===================================================== */
+.pharmacy-stats-section {
+    background: #f4f7fa;
+    padding: 60px 0;
+}
+
+.pharmacy-stats-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pharma-stat-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pharma-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pharma-stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a4fc4;
+    /* Blue color matching the image */
+    margin: 0 0 8px 0;
+}
+
+.pharma-stat-text {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   PHARMACY COURSES SECTION
+   ===================================================== */
+.pharmacy-courses-section {
+    background: #f8fafc;
+    padding: 80px 0;
+    background-size: 80%;
+    /* As per user request */
+}
+
+.pharmacy-courses-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pharmacy-courses-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pharmacy-courses-badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #1a4fc4;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.pharmacy-courses-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a2340;
+    margin: 0 0 10px 0;
+}
+
+.pharmacy-courses-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.course-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.course-details-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.course-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.course-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a2340;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+}
+
+.course-meta {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+}
+
+.course-meta strong {
+    color: #333;
+}
+
+.meta-sep {
+    color: #ccc;
+    margin: 0 5px;
+}
+
+.course-opportunities-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.opp-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a2340;
+    margin: 0 0 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.opp-title i {
+    color: #3b82f6;
+    font-size: 20px;
+}
+
+.opp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.opp-group {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 16px 20px;
+    border: 1px solid #f1f5f9;
+}
+
+.opp-group-name {
+    font-size: 13.5px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+.opp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.opp-tags span {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    font-size: 12px;
+    color: #64748b;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   WHY PHARMACY SECTION
+   ===================================================== */
+.why-pharmacy-section {
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+.why-pharmacy-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.why-pharmacy-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why-pharmacy-badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #1a4fc4;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.why-pharmacy-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a2340;
+    margin: 0 0 10px 0;
+}
+
+.why-pharmacy-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.why-pharmacy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.why-pharmacy-left {
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.why-pharmacy-left-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1a2340;
+    margin: 0 0 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.why-pharmacy-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.why-pharmacy-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.why-pharmacy-list li i {
+    color: #27ae60;
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.why-pharmacy-list li p {
+    margin: 0;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.why-pharmacy-list li strong {
+    color: #333;
+}
+
+.why-pharmacy-list li:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.why-pharmacy-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.why-pharmacy-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 3px solid;
+}
+
+.why-pharmacy-card .card-value {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+
+.why-pharmacy-card .card-label {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+    font-weight: 500;
+}
+
+.green-card {
+    border-top-color: #27ae60;
+}
+
+.green-card .card-value {
+    color: #27ae60;
+}
+
+.blue-card {
+    border-top-color: #3b82f6;
+}
+
+.blue-card .card-value {
+    color: #3b82f6;
+}
+
+.purple-card {
+    border-top-color: #7c4dff;
+}
+
+.purple-card .card-value {
+    color: #7c4dff;
+}
+
+.orange-card {
+    border-top-color: #f0a500;
+}
+
+.orange-card .card-value {
+    color: #f0a500;
+}
+
+
+/* =====================================================
+   FEE STRUCTURE SECTION
+   ===================================================== */
+.fee-structure-section {
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+.fee-structure-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.fee-structure-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.fee-structure-badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #1a4fc4;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.fee-structure-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a2340;
+    margin: 0 0 10px 0;
+}
+
+.fee-structure-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.fee-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.fee-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid;
+}
+
+.fee-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+    min-height: 45px;
+}
+
+.fee-label {
+    font-size: 12px;
+    color: #888;
+    margin: 0 0 4px 0;
+}
+
+.fee-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+.fee-total {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.fee-tag {
+    margin-top: auto;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.green-border {
+    border-top-color: #27ae60;
+}
+
+.green-text {
+    color: #27ae60;
+}
+
+.green-bg {
+    background: #f0fdf4;
+    color: #555;
+}
+
+.blue-border {
+    border-top-color: #3b82f6;
+}
+
+.blue-text {
+    color: #3b82f6;
+}
+
+.blue-bg {
+    background: #eff6ff;
+    color: #555;
+}
+
+.purple-border {
+    border-top-color: #7c4dff;
+}
+
+.purple-text {
+    color: #7c4dff;
+}
+
+.purple-bg {
+    background: #faf5ff;
+    color: #555;
+}
+
+.orange-border {
+    border-top-color: #f0a500;
+}
+
+.orange-text {
+    color: #f0a500;
+}
+
+.orange-bg {
+    background: #fffbeb;
+    color: #555;
+}
+
+.scholarship-banner {
+    border: 1px solid #dcfce7;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.scholarship-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a2340;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.scholarship-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.scholarship-list li {
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.scholarship-btn {
+    background: #0062ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+.scholarship-btn:hover {
+    background: #0056e0;
+}
+
+
+/* =====================================================
+   COMPARISON SECTION
+   ===================================================== */
+.comparison-section {
+    background: #f8fafc;
+    padding: 80px 0;
+}
+
+.comparison-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.comparison-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.comparison-badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #1a4fc4;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.comparison-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a2340;
+    margin: 0;
+}
+
+.comparison-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.comparison-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid;
+}
+
+.comparison-card-title {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bpharm-card {
+    border-top-color: #27ae60;
+}
+
+.bpharm-title {
+    color: #27ae60;
+}
+
+.dpharm-card {
+    border-top-color: #3b82f6;
+}
+
+.dpharm-title {
+    color: #3b82f6;
+}
+
+.comparison-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comparison-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    color: #555;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.comparison-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.bpharm-list li i {
+    color: #27ae60;
+    font-size: 18px;
+}
+
+.dpharm-list li i {
+    color: #3b82f6;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   COUNSELLING SECTION
+   ===================================================== */
+.admission-counselling-section {
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+.counselling-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.counselling-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.counselling-badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #1a4fc4;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.counselling-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a2340;
+    margin: 0 0 10px 0;
+}
+
+.counselling-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.counselling-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #27ae60;
+}
+
+.counselling-card-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.counselling-card-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1a2340;
+    margin: 0 0 15px 0;
+}
+
+.counselling-tag {
+    display: inline-block;
+    background: #e9f7ef;
+    color: #27ae60;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+.counselling-card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.counselling-col-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a2340;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counselling-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.counselling-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: #555;
+}
+
+.counselling-list li i {
+    color: #27ae60;
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+.admission-under-box {
+    background: #f0fdf4;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.admission-under-label {
+    font-size: 12px;
+    color: #666;
+    margin: 0 0 8px 0;
+}
+
+.admission-under-types {
+    font-size: 13px;
+    font-weight: 700;
+    color: #27ae60;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.counselling-action {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.counselling-btn {
+    display: block;
+    background: #0062ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.counselling-btn:hover {
+    background: #0056e0;
+}
+
+
+/* =====================================================
+   TRACK RECORD SECTION
+   ===================================================== */
+.track-record-section {
+    background: #3b82f6;
+    padding: 70px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.track-record-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.track-record-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+}
+
+.track-record-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+    opacity: 0.9;
+}
+
+.track-record-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.track-stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+}
+
+.track-stat-text {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.85;
+}
+
+
+/* =====================================================
+   PHARMACY CTA SECTION
+   ===================================================== */
+.pharmacy-cta-section {
+    background: #f8fafc;
+    padding: 60px 0;
+}
+
+.pharmacy-cta-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.pharmacy-cta-box {
+    background: linear-gradient(135deg, #1a73e8, #1ca1f2);
+    border-radius: 16px;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(28, 161, 242, 0.3);
+}
+
+.pharmacy-cta-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+}
+
+.pharmacy-cta-subtitle {
+    font-size: 15px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.pharmacy-cta-btn {
+    background: #ffffff;
+    color: #1a73e8;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.pharmacy-cta-btn:hover {
+    background: #f1f5f9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -92,4 +1052,144 @@
     .pharmacy-para {
         font-size: 14px;
     }
+}
+
+/* Pharmacy Stats Responsive */
+@media (max-width: 900px) {
+    .pharmacy-stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .pharmacy-stats-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Pharmacy Courses Responsive */
+@media (max-width: 1024px) {
+    .scholarship-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fee-cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .course-row {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .why-pharmacy-content,
+    .comparison-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .pharmacy-cta-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scholarship-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .scholarship-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .scholarship-list,
+    .counselling-card-content {
+        grid-template-columns: 1fr;
+    }
+
+    .track-record-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .pharmacy-courses-title,
+    .why-pharmacy-title,
+    .fee-structure-title,
+    .comparison-title,
+    .counselling-title {
+        font-size: 26px;
+    }
+
+    .counselling-card-title,
+    .pharmacy-cta-title {
+        font-size: 20px;
+    }
+
+    .track-record-title {
+        font-size: 28px;
+    }
+
+    .track-stat-number {
+        font-size: 36px;
+    }
+
+    .course-name {
+        font-size: 20px;
+    }
+
+    .course-details-card,
+    .course-opportunities-card,
+    .comparison-card,
+    .counselling-card {
+        padding: 25px 20px;
+    }
+
+    .pharmacy-cta-box {
+        padding: 30px 20px;
+    }
+
+    .why-pharmacy-right,
+    .fee-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .track-record-stats {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+@media (max-width: 430px) {
+    .pharmacy-counseling { padding: 36px 0 !important; }
+    .pharmacy-title { font-size: 22px !important; }
+    .pharmacy-para { font-size: 13px !important; }
+    .pharmacy-stats-container { grid-template-columns: 1fr 1fr !important; padding: 0 12px !important; }
+    .pharmacy-courses-container,
+    .why-pharmacy-container,
+    .scholarship-container,
+    .counselling-container,
+    .track-record-container,
+    .pharmacy-cta-container { padding: 0 12px !important; max-width: 100% !important; }
+    .pharmacy-courses-card,
+    .why-pharmacy-content,
+    .scholarship-list,
+    .counselling-card-content,
+    .fee-cards-wrapper,
+    .comparison-cards-wrapper { grid-template-columns: 1fr !important; }
+    .pharmacy-courses-title,
+    .why-pharmacy-heading,
+    .scholarship-heading,
+    .counselling-heading { font-size: 20px !important; }
+    .pharmacy-cta-box { flex-direction: column; gap: 14px; padding: 20px 14px; }
+    .pharmacy-cta-box .btn { width: 100%; }
+    .track-record-stats { grid-template-columns: 1fr 1fr !important; }
 }

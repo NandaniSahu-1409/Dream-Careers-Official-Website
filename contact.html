@@ -44,7 +44,13 @@
             <img src="logopic.png" alt="Dream Careers">
         </div>
 
-        <nav>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+<nav id="main-nav">
             <ul>
 
                 <li><a href="index.html">Home</a></li>
@@ -52,7 +58,7 @@
                 <li><a href="services.html">Services</a></li>
 
                 <li class="dropdown">
-                    <a href="#">
+                    <a href="#" class="dropdown-toggle">
                         Counseling
                         <i class="fa-solid fa-chevron-down"></i>
                     </a>
@@ -64,7 +70,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#">
+                    <a href="#" class="dropdown-toggle">
                         Programs
                         <i class="fa-solid fa-chevron-down"></i>
                     </a>
@@ -119,44 +125,46 @@
             <div class="cc-cards">
                 <div class="cc_cards-content">
                     <div class="cc_cards-item">
-                        <i class="fa-solid fa-location-dot" style="color: blue;"></i>
+                        <div class="cc-icon cc-icon-blue">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
                         <h6>Our Location</h6>
-                        <h3>Bhilai Office:</h3>
+                        <h4>Bhilai Office:</h4>
                         <p>2nd Floor, Chouhan Park View, Near Shri Shankaracharya Mahavidyalaya, Junwani Road, Bhilai,
                             District - Durg (C.G.), Pincode - 490020</p>
 
-                        <h3>Noida Office:</h3>
+                        <h4>Noida Office:</h4>
                         <p>Noida Sector - 4, Block A - 86 Basement, Office Number B-6, Uttar Pradesh, Pin Code - 201301
                         </p>
-                        <h6>Visit Us</h6>
+                        <span class="cc-note">Visit Us</span>
                     </div>
+
                     <div class="cc_cards-item">
-                        <i class="fa-solid fa-phone" style="color: green;"></i>
+                        <div class="cc-icon cc-icon-green">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
                         <h6>Call Us</h6>
-                        <p>+91 9522221191</p>
-
-
-                        <h6>Mon-Sat , 9AM-7PM</h6>
+                        <h4>+91 9522221191</h4>
+                        <span class="cc-note">Mon-Sat, 9AM-7PM</span>
                     </div>
 
                     <div class="cc_cards-item">
-                        <i class="fa-solid fa-envelope" style="color: gold;"></i>
-                        <h6>Email us</h6>
-                        <p>help@dreamcareers.co.in</p>
-
-
-                        <h6>We reply within 24 hrs</h6>
+                        <div class="cc-icon cc-icon-orange">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h6>Email Us</h6>
+                        <h4>help@dreamcareers.co.in</h4>
+                        <span class="cc-note">We reply within 24 hrs</span>
                     </div>
 
                     <div class="cc_cards-item">
-                        <i class="fa-solid fa-clock" style="color: rgb(233, 89, 89);"></i>
+                        <div class="cc-icon cc-icon-red">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
                         <h6>Working Hours</h6>
-                        <p>Mon – Sat: 9 AM – 7 PM</p>
-
-
-                        <h6>Sunday: Closed</h6>
+                        <h4>Mon – Sat: 9 AM – 7 PM</h4>
+                        <span class="cc-note">Sunday: Closed</span>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -361,7 +369,7 @@
 
             <!-- Company -->
 
-            <div class="footer-links">
+            <div class="footer-links company-col">
 
                 <h3>Company</h3>
 
@@ -374,7 +382,7 @@
 
             <!-- Services -->
 
-            <div class="footer-links">
+            <div class="footer-links services-col">
 
                 <h3>Services</h3>
 
@@ -387,7 +395,7 @@
 
             <!-- Courses -->
 
-            <div class="footer-links">
+            <div class="footer-links courses-col">
 
                 <h3>Courses</h3>
 
@@ -416,6 +424,32 @@
         </div>
 
     </footer>
+
+<script>
+    // Hamburger menu toggle
+    var hamburger = document.getElementById("hamburger");
+    var mainNav   = document.getElementById("main-nav");
+    if (hamburger && mainNav) {
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("active");
+            mainNav.classList.toggle("open");
+        });
+        document.querySelectorAll(".dropdown-toggle").forEach(function (toggle) {
+            toggle.addEventListener("click", function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle("dropdown-open");
+                }
+            });
+        });
+        document.addEventListener("click", function (e) {
+            if (!mainNav.contains(e.target) && !hamburger.contains(e.target)) {
+                mainNav.classList.remove("open");
+                hamburger.classList.remove("active");
+            }
+        });
+    }
+</script>
 </body>
 
 </html>

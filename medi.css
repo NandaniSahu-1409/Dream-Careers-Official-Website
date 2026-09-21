@@ -69,6 +69,7 @@
 }
 
 .medi-box-body {
+    overflow-x: hidden;
     width: 100%;
 }
 
@@ -257,7 +258,7 @@
     padding: 6px 16px;
     border-radius: 20px;
     margin-bottom: 14px;
-    margin-left: 10.4rem;
+    margin-left: 0;
     text-align: center;
 }
 
@@ -276,7 +277,7 @@
     font-size: 15px;
     margin-bottom: 28px;
     font-weight: 400;
-    margin-left: 6rem;
+    margin-left: 0;
 }
 
 /* 
@@ -472,7 +473,7 @@
     padding: 6px 16px;
     border-radius: 20px;
     margin-bottom: 14px;
-    margin-left: 17.6rem;
+    margin-left: 0;
     text-align: center;
 }
 
@@ -491,7 +492,7 @@
     font-size: 15px;
     margin-bottom: 28px;
     font-weight: 400;
-    margin-left: 6rem;
+    margin-left: 0;
 }
 
 .mcc-process-item {
@@ -635,7 +636,7 @@
     margin-bottom: 24px;
     transition: all .3s;
     height: 100%;
-    margin-left: 25rem;
+    margin-left: 0;
 }
 
 .mcc-importantinfo span {
@@ -669,7 +670,7 @@
     padding: 6px 16px;
     border-radius: 20px;
     margin-bottom: 14px;
-    margin-left: 13rem;
+    margin-left: 0;
     text-align: center;
 }
 
@@ -688,7 +689,7 @@
     font-size: 15px;
     margin-bottom: 28px;
     font-weight: 400;
-    margin-left: 4rem;
+    margin-left: 0;
 }
 
 
@@ -1033,7 +1034,7 @@
 .btn {
     color: #ffffff;
     background-color: #0D6EFD;
-    width: 20rem;
+    width: 100%;
     height: 45px;
     /* margin-bottom: 10px; */
     padding: 15px 15px;
@@ -1254,8 +1255,8 @@ p {
     transition: all .3s;
     height: 100%;
     padding: 30px 40px;
-    margin-left: 2.6rem;
-    margin-right: 2.6rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* .investment-budget-container {
@@ -1351,8 +1352,8 @@ p {
 }
 
 .investment-banks-cards-content {
-    margin-left: 2.2rem;
-    margin-right: 2.2rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -1481,7 +1482,7 @@ span {
     /* margin-left: 18rem;
     margin-right: 18rem; */
     border-radius: 12px;
-    width: 52rem;
+    width: 100%;
     height: 7rem;
     display: flex;
     justify-content: center;
@@ -1950,7 +1951,7 @@ span {
     text-decoration: none;
     white-space: nowrap;
     transition: transform .2s, box-shadow .2s;
-    margin-left: 48rem;
+    margin-left: 0;
 }
 
 
@@ -2611,5 +2612,292 @@ span {
     .itemtwo-head,
     .itemtwo-headone {
         font-size: 20px;
+    }
+}
+
+
+/* =====================================================
+   MEDI.CSS RESPONSIVE — TABLET (max-width: 1024px)
+   ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .medicle-counseling {
+        padding: 60px 0;
+    }
+
+    .medi-box-content {
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .medi-box-body .medi-box-item {
+        flex: 1 1 calc(50% - 20px);
+        min-width: 140px;
+    }
+
+    .medi-card-container {
+        padding: 0 20px;
+    }
+
+    .medi-card-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Fix overflow-causing fixed margins */
+    .medi-seat-main,
+    .mcc-process-main,
+    .state-counseling-main,
+    .career-prospects-main,
+    .investment-main,
+    .medi-seat-cardone,
+    .mcc-process-item,
+    .state-counseling-main,
+    .investment-budget {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .medi-seat-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .medi-seat-cardone {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .mcc-process-item {
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding: 0 20px !important;
+    }
+
+    .state-counseling-carditem {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .counseling-servies-carditem {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .investment-card-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ibanks-card-dataone {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .career-prospects-carddata {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education-loan {
+        width: 100% !important;
+    }
+
+    .investment-banks-cards-content,
+    .investment-budget {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+}
+
+/* =====================================================
+   MEDI.CSS RESPONSIVE — MOBILE (max-width: 768px)
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* Hero */
+    .medicle-counseling {
+        padding: 50px 0;
+    }
+
+    .medicle-title {
+        font-size: 34px;
+        margin-bottom: 14px;
+    }
+
+    .medicle-para {
+        font-size: 15px;
+    }
+
+    /* Stats bar */
+    .medi-box {
+        padding: 24px 0;
+    }
+
+    .medi-box-content {
+        padding: 0 16px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .medi-box-body .medi-box-item {
+        flex: 1 1 calc(50% - 12px);
+        padding: 16px 18px;
+    }
+
+    .medi-box-body .num {
+        font-size: 28px;
+    }
+
+    .medi-box-body h4 {
+        font-size: 13px;
+    }
+
+    /* Cards */
+    .medi-card-container {
+        padding: 0 16px;
+    }
+
+    .medi-card-heading {
+        font-size: 24px !important;
+    }
+
+    .medi-card-item {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .medi-item {
+        padding: 24px 20px;
+    }
+
+    .medi-item h3 {
+        font-size: 17px;
+    }
+
+    .medi-item p {
+        font-size: 14px;
+    }
+
+    /* All fixed margins — eliminate */
+    .medi-seat-main,
+    .mcc-process-main,
+    .state-counseling-main,
+    .career-prospects-main,
+    .investment-main,
+    .investment-budget,
+    .investment-banks-cards-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        padding: 0 16px !important;
+    }
+
+    .medi-seat-card {
+        grid-template-columns: 1fr !important;
+    }
+
+    .medi-seat-cardone {
+        grid-template-columns: 1fr !important;
+    }
+
+    .mcc-process-item {
+        grid-template-columns: 1fr !important;
+        padding: 0 16px !important;
+    }
+
+    .state-counseling-carditem {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+
+    .counseling-servies-carditem {
+        grid-template-columns: 1fr !important;
+    }
+
+    .investment-card-item {
+        grid-template-columns: 1fr !important;
+    }
+
+    .ibanks-card-dataone {
+        grid-template-columns: 1fr !important;
+    }
+
+    .career-prospects-carddata {
+        grid-template-columns: 1fr !important;
+    }
+
+    .education-loan {
+        width: 100% !important;
+    }
+}
+
+/* =====================================================
+   MEDI.CSS RESPONSIVE — SMALL PHONES (max-width: 480px)
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    .medicle-title {
+        font-size: 26px;
+    }
+
+    .medicle-para {
+        font-size: 14px;
+    }
+
+    .medi-card-heading {
+        font-size: 22px !important;
+    }
+
+    .medi-box-body .medi-box-item {
+        flex: 1 1 100%;
+    }
+
+    .medi-box-body .num {
+        font-size: 26px;
+    }
+
+    .state-counseling-carditem {
+        grid-template-columns: 1fr !important;
+    }
+
+    .medi-item {
+        padding: 20px 16px;
+    }
+
+    .medi-item h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .medicle-title { font-size: 24px !important; }
+    .medicle-para { font-size: 13px !important; }
+    .medi-box-content { padding: 0 12px !important; flex-direction: column; }
+    .medi-box-body .medi-box-item { flex: 1 1 100% !important; }
+    .medi-box-body .num { font-size: 24px !important; }
+    .medi-card-container { padding: 0 12px !important; }
+    .medi-card-heading { font-size: 20px !important; }
+    .medi-card-item { grid-template-columns: 1fr !important; }
+    .medi-item { padding: 18px 14px !important; }
+    .medi-item h3 { font-size: 15px !important; }
+    .medi-item p { font-size: 13px !important; }
+    /* All fixed grids */
+    .medi-seat-card,
+    .medi-seat-cardone,
+    .mcc-process-item,
+    .state-counseling-carditem,
+    .counseling-servies-carditem,
+    .investment-card-item,
+    .ibanks-card-dataone,
+    .career-prospects-carddata { grid-template-columns: 1fr !important; }
+    /* Remove any remaining fixed margins */
+    [class*="medi-"][class*="-main"],
+    [class*="medi-"][class*="-container"],
+    [class*="-seat-"],
+    [class*="-process-"],
+    [class*="-counseling-"] {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        box-sizing: border-box !important;
     }
 }
